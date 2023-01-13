@@ -1,8 +1,19 @@
 import React from 'react'
 import './App.css'
+import Footer from './components/Footer'
+import Hero from './components/Hero'
+import Info from './components/Info'
+import Projects from './components/Projects'
 
 function App() {
-  return <h1>Hello World</h1>
+  return (
+    <div>
+      <Hero />
+      <Info />
+      <Projects />
+      <Footer />
+    </div>
+  )
 }
 
 export default App
