@@ -8,13 +8,7 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: white;
-}
-
 body {
-  padding-inline: 20px;
-  max-width: 1200px;
-  margin-inline: auto;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: white;
+  font-family: Roboto, Calibri, 'Trebuchet MS', sans-serif;
 }
