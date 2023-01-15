@@ -8,7 +8,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eee;
+  background: var(--hero-bg);
+  color: var(--hero-txt);
 `
 
 const Wrapper = styled.div`
@@ -16,7 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 25px;
+  margin: 0 24px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

@@ -1,5 +1,17 @@
 :root {
-  --background: rgb(236, 236, 236);
+  --hero-bg: rgb(236, 236, 236);
+  --hero-txt: black;
+
+  --navbar-bg: black;
+  --navbar-content: white;
+
+  --card-bg: white;
+  --card-img-bg: white;
+  --card-title: black;
+  --card-icon: white;
+  --card-discription: white;
+  --card-overlay-bg: rgba(17, 28, 149, 0.9);
+  --card-overlay-content: white;
 }
 
 * {
@@ -11,4 +23,10 @@
 body {
   background-color: white;
   font-family: Roboto, Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 0.75rem;
+  }
 }

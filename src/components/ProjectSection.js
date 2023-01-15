@@ -26,7 +26,7 @@ const Labels = styled.div`
 const Cards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 20px;
 
   @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;

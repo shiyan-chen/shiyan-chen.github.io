@@ -1,65 +1,94 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { FaGithub } from 'react-icons/fa'
-
-const Container = styled.div`
+const Overlay = styled.div`
   display: flex;
-  max-width: 350px;
-  height: 350px;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 0px;
-`
-
-const Img = styled.img`
+  position: absolute;
   width: 100%;
-  height: 220px;
-  background-color: beige;
-`
-
-const Content = styled.div`
-  padding: 20px;
+  height: 0;
+  background-color: var(--card-overlay-bg);
+  color: var(--card-overlay-content);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
 
   div {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    height: 0;
+    margin: 2rem;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+  }
+`
+const Container = styled.div`
+  position: relative;
+  display: flex;
+  max-width: 300px;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0px;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
-    h1 {
-      font-size: 1.5rem;
-    }
+  &:hover ${Overlay} {
+    height: 100%;
 
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      color: black;
-      margin-left: 0.5rem;
+    div {
+      opacity: 1;
+      height: 100%;
+      vertical-align: center;
     }
   }
+`
 
-  p {
-    font-size: 1rem;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+`
+
+const Img = styled.img`
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  background-color: var(--card-img-bg);
+`
+
+const Content = styled.div`
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 1.3rem;
+    color: var(--card-title);
   }
 `
 
 const Card = (props) => {
   return (
     <Container>
-      <Img src={props.img} alt='' />
-      <Content>
-        <div>
+      <Overlay>
+        <div>{props.subtitle}</div>
+      </Overlay>
+      <Wrapper>
+        <Img src={props.img} alt='' />
+        <Content>
           <h1>{props.title}</h1>
-          <a href='//www.instagram.com'>
-            <FaGithub />
-          </a>
-        </div>
-        <p>{props.subtitle}</p>
-      </Content>
+        </Content>
+      </Wrapper>
     </Container>
   )
 }
