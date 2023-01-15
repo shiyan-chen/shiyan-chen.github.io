@@ -18,11 +18,6 @@ const Title = styled.h1`
   font-size: 2rem;
 `
 
-const Labels = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
 const Cards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -43,8 +38,7 @@ const ProjectSection = () => {
 
   return (
     <Container>
-      <Title>My Projects</Title>
-      <Labels></Labels>
+      <Title>Projects</Title>
       <Cards>{cards}</Cards>
     </Container>
   )

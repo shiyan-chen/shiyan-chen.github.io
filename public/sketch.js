@@ -7,15 +7,18 @@ let size = 100
 let myColor
 let radiusDist = []
 
-window.addEventListener('resize', () => {
-  setup()
-})
+if (window.innerWidth > 480) {
+  window.addEventListener('resize', () => {
+    setup()
+  })
+}
 
 function setup() {
-  if (windowWidth < 1000) {
-    createCanvas(windowWidth, windowHeight)
+  var [height, width] = [window.innerHeight, window.innerWidth]
+  if (width < 1000) {
+    createCanvas(width, height)
   } else {
-    createCanvas(windowWidth / 2, windowHeight)
+    createCanvas(width / 2, height)
   }
 
   colorMode(HSB, 1)

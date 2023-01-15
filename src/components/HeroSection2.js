@@ -52,6 +52,7 @@ const Content = styled.div`
     font-family: var(--font-display);
     line-height: 0.9;
     color: var(--hero-content);
+    white-space: nowrap;
   }
 
   p {

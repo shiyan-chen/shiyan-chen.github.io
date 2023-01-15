@@ -34,7 +34,7 @@ const Container = styled.div`
   text-align: center;
   border-radius: 0px;
   background-color: var(--card-bg);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
   &:hover ${Overlay} {

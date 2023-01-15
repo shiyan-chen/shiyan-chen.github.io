@@ -1,7 +1,12 @@
 :root {
+  --highlight: rgb(0, 136, 255);
+
   --hero-bg: white;
   --hero-content: rgb(0, 136, 255);
   --hero-subtitle: rgba(51, 51, 51, 0.9);
+
+  --about-bg: rgb(0, 136, 255);
+  --about-content: whilte;
 
   --navbar-bg: white;
   --navbar-content: black;
