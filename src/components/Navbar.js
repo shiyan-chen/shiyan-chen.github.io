@@ -79,7 +79,7 @@ const Btn = styled.div`
 
 // https://www.robinwieruch.de/react-hook-scroll-direction/
 
-const THRESHOLD = 0
+const THRESHOLD = 20
 
 const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = React.useState('up')

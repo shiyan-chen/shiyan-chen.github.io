@@ -1,83 +1,90 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import NotionAvatar from '../assets/notion-avatar.svg'
-
 const Container = styled.div`
+  width: 100%;
+  height: 100vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--hero-bg);
-  color: var(--hero-content);
+
+  z-index: -2;
 `
 
 const Wrapper = styled.div`
-  max-width: 1100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 24px;
 
-  @media screen and (max-width: 768px) {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 24px;
+
+  @media screen and (max-width: 1200px) {
     flex-direction: column;
+  }
+`
+
+const Space = styled.div`
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
   }
 `
 
 const Content = styled.div`
   display: flex;
+  align-items: left;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   flex-direction: column;
-
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 3rem;
-    font-family: Lobster, 'Abril Fatface', sans-serif;
-  }
+  cursor: default;
 
   h1 {
     font-size: 5rem;
-    font-family: Lobster, 'Abril Fatface', sans-serif;
-    white-space: nowrap;
-    margin-top: -1rem;
-  }
+    font-family: var(--font-display);
+    line-height: 0.9;
+    color: var(--hero-content);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 
-  p {
-    padding-top: 1rem;
-    font-size: 2rem;
-  }
-`
+    span {
+      white-space: nowrap;
+    }
 
-const Avatar = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: center;
-
-  img {
-    max-width: 400px;
-    margin-top: -2rem;
+    .space {
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
   }
 `
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <Container>
       <Wrapper>
-        <Avatar>
-          <img src={NotionAvatar} alt='notion avatar' />
-        </Avatar>
+        <Space />
         <Content>
-          <h2>Hi, I'm</h2>
-          <h1>Shiyan Chen.</h1>
-          <p>
-            I'm a full-stack software developer & designer from San Jose, CA.
-          </p>
+          <h1>
+            Hi,{' '}
+            <span className='space'>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            I'm <span>Shiyan Chen.</span>
+          </h1>
         </Content>
       </Wrapper>
     </Container>
   )
 }
 
-export default Hero
+export default HeroSection

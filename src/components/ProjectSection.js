@@ -14,8 +14,9 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  padding-bottom: 2rem;
-  font-size: 2rem;
+  padding-bottom: 1.5em;
+  font-size: 3rem;
+  color: var(--highlight);
 `
 
 const Cards = styled.div`
@@ -38,7 +39,7 @@ const ProjectSection = () => {
 
   return (
     <Container>
-      <Title>Projects</Title>
+      <Title>My Projects</Title>
       <Cards>{cards}</Cards>
     </Container>
   )
