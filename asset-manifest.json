@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.226fdf3c.css",
-    "main.js": "/static/js/main.cb923d08.js",
+    "main.css": "/static/css/main.1548b679.css",
+    "main.js": "/static/js/main.56d706d1.js",
     "static/media/hero-page.png": "/static/media/hero-page.59c533d377dfdddf5cb2.png",
     "static/media/unworried-store.png": "/static/media/unworried-store.d7b741668bdabf329a66.png",
     "static/media/dolla.png": "/static/media/dolla.3c10df7bfe25111b8f7d.png",
@@ -12,13 +12,12 @@
     "static/media/augmented-design.png": "/static/media/augmented-design.b33fd83cf2d0c1e9b8ee.png",
     "static/media/document-search.png": "/static/media/document-search.503969ebaefe7290c68e.png",
     "static/media/window-tracker.png": "/static/media/window-tracker.e66290c1da15e1298759.png",
-    "static/media/notion-avatar.svg": "/static/media/notion-avatar.d62fbb1e6e30526d63fc41b6e6ad322b.svg",
     "index.html": "/index.html",
-    "main.226fdf3c.css.map": "/static/css/main.226fdf3c.css.map",
-    "main.cb923d08.js.map": "/static/js/main.cb923d08.js.map"
+    "main.1548b679.css.map": "/static/css/main.1548b679.css.map",
+    "main.56d706d1.js.map": "/static/js/main.56d706d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.226fdf3c.css",
-    "static/js/main.cb923d08.js"
+    "static/css/main.1548b679.css",
+    "static/js/main.56d706d1.js"
   ]
 }
