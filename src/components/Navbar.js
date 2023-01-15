@@ -56,7 +56,7 @@ const Btn = styled.div`
   align-items: center;
   width: 150px;
   height: 40px;
-  border: 1px solid white;
+  border: 1px solid var(--navbar-content);
   border-radius: 5px;
   cursor: pointer;
 

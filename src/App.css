@@ -1,17 +1,20 @@
 :root {
-  --hero-bg: rgb(236, 236, 236);
-  --hero-txt: black;
+  --hero-bg: white;
+  --hero-content: rgb(0, 136, 255);
+  --hero-subtitle: rgba(51, 51, 51, 0.9);
 
-  --navbar-bg: black;
-  --navbar-content: white;
+  --navbar-bg: white;
+  --navbar-content: black;
 
   --card-bg: white;
   --card-img-bg: white;
   --card-title: black;
   --card-icon: white;
   --card-discription: white;
-  --card-overlay-bg: rgba(17, 28, 149, 0.9);
+  --card-overlay-bg: hwb(208 0% 0% / 0.95);
   --card-overlay-content: white;
+
+  --font-display: Lobster, 'Abril Fatface', sans-serif;
 }
 
 * {
@@ -25,8 +28,27 @@ body {
   font-family: Roboto, Calibri, 'Trebuchet MS', sans-serif;
 }
 
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -ms-transform: translate(10%, 0);
+  transform: translate(10%, 0);
+  z-index: -1;
+}
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  canvas {
+    -ms-transform: translate(0, -15%);
+    transform: translate(0, -15%);
   }
 }

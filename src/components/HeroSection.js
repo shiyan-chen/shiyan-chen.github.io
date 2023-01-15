@@ -9,7 +9,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   background: var(--hero-bg);
-  color: var(--hero-txt);
+  color: var(--hero-content);
 `
 
 const Wrapper = styled.div`
