@@ -1,14 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a0c4f50.css",
-    "main.js": "/static/js/main.75c9b70f.js",
+    "main.css": "/static/css/main.226fdf3c.css",
+    "main.js": "/static/js/main.cb923d08.js",
+    "static/media/hero-page.png": "/static/media/hero-page.59c533d377dfdddf5cb2.png",
+    "static/media/unworried-store.png": "/static/media/unworried-store.d7b741668bdabf329a66.png",
+    "static/media/dolla.png": "/static/media/dolla.3c10df7bfe25111b8f7d.png",
+    "static/media/bear-maps.png": "/static/media/bear-maps.e17d5f01b1669184ca47.png",
+    "static/media/django-twitter.png": "/static/media/django-twitter.c2a2217c4f1199b6f363.png",
+    "static/media/ecommerce.png": "/static/media/ecommerce.d6f3e471d1f126afbdbb.png",
+    "static/media/flappy-astronaut.png": "/static/media/flappy-astronaut.f611b47a9e7ed7586b89.png",
+    "static/media/augmented-design.png": "/static/media/augmented-design.b33fd83cf2d0c1e9b8ee.png",
+    "static/media/document-search.png": "/static/media/document-search.503969ebaefe7290c68e.png",
+    "static/media/window-tracker.png": "/static/media/window-tracker.e66290c1da15e1298759.png",
     "static/media/notion-avatar.svg": "/static/media/notion-avatar.d62fbb1e6e30526d63fc41b6e6ad322b.svg",
     "index.html": "/index.html",
-    "main.9a0c4f50.css.map": "/static/css/main.9a0c4f50.css.map",
-    "main.75c9b70f.js.map": "/static/js/main.75c9b70f.js.map"
+    "main.226fdf3c.css.map": "/static/css/main.226fdf3c.css.map",
+    "main.cb923d08.js.map": "/static/js/main.cb923d08.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a0c4f50.css",
-    "static/js/main.75c9b70f.js"
+    "static/css/main.226fdf3c.css",
+    "static/js/main.cb923d08.js"
   ]
 }
