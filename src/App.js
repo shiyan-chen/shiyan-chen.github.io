@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import './App.css'
-import AboutSection from './components/AboutSection'
-import HeroSection from './components/HeroSection'
+import About from './components/About'
+import Footer from './components/Footer'
+import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import ProjectSection from './components/ProjectSection'
+import Projects from './components/Projects'
 import Sidebar from './components/Sidebar'
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
     <div>
       <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
       <Navbar toggleSidebar={toggleSidebar} />
-      <HeroSection />
-      <AboutSection />
-      <ProjectSection />
+      <Hero />
+      <About />
+      <Projects />
+      <Footer />
     </div>
   )
 }

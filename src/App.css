@@ -1,15 +1,18 @@
 :root {
   --highlight: rgb(0, 136, 255);
+  --darg-bg: rgb(0, 136, 255);
 
   --hero-bg: white;
   --hero-content: rgb(0, 136, 255);
   --hero-subtitle: rgba(51, 51, 51, 0.9);
 
-  --about-bg: rgb(0, 136, 255);
+  --about-bg: var(--darg-bg);
   --about-content: white;
 
   --navbar-bg: white;
   --navbar-content: black;
+
+  --footer-bg: var(--darg-bg);
 
   --card-bg: white;
   --card-img-bg: white;
@@ -47,17 +50,20 @@ canvas {
   z-index: -1;
 }
 
-/* @media screen and (max-width: 768px) {
-  html {
-    font-size: 0.75rem;
-  }
-} */
-
 @media screen and (max-width: 1200px) {
   canvas {
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -58%);
-    transform: translate(-50%, -58%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  canvas {
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }

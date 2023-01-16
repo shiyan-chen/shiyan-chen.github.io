@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -2;
+  z-index: -999;
 `
 
 const Poke = styled.div`
@@ -32,32 +32,27 @@ const Poke = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-100%, -230%);
-    transform: translate(-100%, -230%);
+    -ms-transform: translate(-130%, -200%);
+    transform: translate(-130%, -200%);
     z-index: 3;
 
-    height: 120px;
-    width: 200px;
+    height: 140px;
+    width: 150px;
     background-image: url(${PokeMe2});
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  @media screen and (min-height: 1000px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-100%, -300%);
-    transform: translate(-100%, -300%);
-    z-index: 3;
+  @media screen and (max-width: 1200px) and (min-height: 1000px) {
+    -ms-transform: translate(-130%, -200%);
+    transform: translate(-130%, -200%);
+  }
 
-    height: 120px;
-    width: 200px;
-    background-image: url(${PokeMe2});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  @media screen and (max-width: 1200px) and (max-height: 700px) {
+    height: 130px;
+    -ms-transform: translate(-120%, -170%);
+    transform: translate(-120%, -170%);
   }
 `
 
@@ -115,13 +110,13 @@ const Content = styled.div`
       }
     }
 
-    @media screen and (max-width: 480px) {
-      font-size: 4rem;
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
     }
   }
 `
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <Container>
       <Poke />
@@ -141,4 +136,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection
+export default Hero

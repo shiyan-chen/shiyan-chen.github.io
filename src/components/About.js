@@ -35,16 +35,17 @@ const ImgWrap = styled.div`
     height: 400px;
     width: auto;
     object-fit: cover;
-    border-radius: 20%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 15%;
+    transition: all 0.3s ease-in-out;
 
     @media screen and (max-width: 450px) {
       height: 300px;
+      box-shadow: 5px -7px 0 0 rgb(255, 255, 255, 1);
     }
 
     @media screen and (hover: hover) {
       &:hover {
-        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6);
+        box-shadow: 10px 10px 0px 0 white;
       }
     }
   }
@@ -84,7 +85,7 @@ const Content = styled.div`
   }
 `
 
-const AboutSection = () => {
+const About = () => {
   return (
     <Container>
       <Wrapper>
@@ -113,4 +114,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default About
