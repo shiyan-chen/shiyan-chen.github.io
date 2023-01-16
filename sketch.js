@@ -18,7 +18,8 @@ function setup() {
   colorMode(HSB, 1)
   noStroke()
 
-  myColor = color(0.57, 0.96, 1, 0.5) // light blue, shiny!
+  myColor = color(0.59, 0.96, 1) // light blue, shiny!
+  // myColor = '#e63946'
   n = floor((2 * PI) / step)
 
   radiusDist.length = n
