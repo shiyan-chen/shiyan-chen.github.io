@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.11cad5cd.css",
-    "main.js": "/static/js/main.a3b7f3b4.js",
+    "main.css": "/static/css/main.16cfb973.css",
+    "main.js": "/static/js/main.95e75185.js",
     "static/media/hero-page.png": "/static/media/hero-page.59c533d377dfdddf5cb2.png",
     "static/media/unworried-store.png": "/static/media/unworried-store.d7b741668bdabf329a66.png",
     "static/media/dolla.png": "/static/media/dolla.3c10df7bfe25111b8f7d.png",
@@ -14,11 +14,11 @@
     "static/media/document-search.png": "/static/media/document-search.503969ebaefe7290c68e.png",
     "static/media/window-tracker.png": "/static/media/window-tracker.e66290c1da15e1298759.png",
     "index.html": "/index.html",
-    "main.11cad5cd.css.map": "/static/css/main.11cad5cd.css.map",
-    "main.a3b7f3b4.js.map": "/static/js/main.a3b7f3b4.js.map"
+    "main.16cfb973.css.map": "/static/css/main.16cfb973.css.map",
+    "main.95e75185.js.map": "/static/js/main.95e75185.js.map"
   },
   "entrypoints": [
-    "static/css/main.11cad5cd.css",
-    "static/js/main.a3b7f3b4.js"
+    "static/css/main.16cfb973.css",
+    "static/js/main.95e75185.js"
   ]
 }
