@@ -11,13 +11,13 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--project-bg);
 `
 
 const Subtitle = styled.h2`
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: var(--highlight);
+  color: var(--project-content);
 
   @media screen and (max-width: 480px) {
     margin-bottom: 2rem;
@@ -29,7 +29,7 @@ const Title = styled.h1`
   font-size: 3rem;
   margin-bottom: 1em;
   line-height: 0.9;
-  color: var(--highlight);
+  color: var(--project-content);
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;

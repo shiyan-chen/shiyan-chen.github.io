@@ -9,7 +9,8 @@ const Container = styled.aside`
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: var(--highlight);
+  background-color: var(--navbar-bg);
+  color: black;
   display: grid;
   align-items: center;
   top: ${({ showSidebar }) => (showSidebar ? '0' : '-100%')};
@@ -29,11 +30,11 @@ const Icon = styled.div`
 `
 
 const CloseIcon = styled(FaTimes)`
-  color: white;
+  color: black;
 `
 
 const Wrapper = styled.div`
-  color: white;
+  color: black;
 `
 
 const Menu = styled.ul`
@@ -55,12 +56,14 @@ const SidebarLink = styled.div`
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: all 0.2s ease-in-out;
   padding-inline: 1rem;
   cursor: pointer;
 
-  &:hover {
-    border-bottom: 2px solid white;
+  @media screen and (hover: hover) {
+    &:hover {
+      color: var(--highlight);
+      /* border-bottom: 2px solid var(--highlight); */
+    }
   }
 `
 
@@ -73,8 +76,8 @@ const SidebarRoute = styled.div`
   border-radius: 50px;
   white-space: nowrap;
   padding: 16px 64px;
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -82,8 +85,9 @@ const SidebarRoute = styled.div`
 
   @media screen and (hover: hover) {
     &:hover {
-      background-color: white;
-      color: var(--highlight);
+      background-color: var(--highlight);
+      border: 2px solid var(--highlight);
+      color: white;
     }
   }
 `

@@ -18,7 +18,9 @@ function setup() {
   colorMode(HSB, 1)
   noStroke()
 
-  myColor = color(0.57, 0.96, 1, 0.5) // light blue, shiny!
+  // myColor = color(0.59, 0.96, 1) // light blue, shiny!
+  // myColor = '#e63946'
+  myColor = '#ff6700'
   n = floor((2 * PI) / step)
 
   radiusDist.length = n
@@ -26,8 +28,6 @@ function setup() {
 }
 
 function draw() {
-  // background(0.98)
-
   fill(myColor)
   blob(radiusDist, width / 2, height / 2, 0.7, t)
   drawFace(t)

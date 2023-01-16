@@ -40,12 +40,12 @@ const ImgWrap = styled.div`
 
     @media screen and (max-width: 450px) {
       height: 300px;
-      box-shadow: 5px -7px 0 0 rgb(255, 255, 255, 1);
+      box-shadow: 5px -7px 0 0 var(--about-accent);
     }
 
     @media screen and (hover: hover) {
       &:hover {
-        box-shadow: 10px 10px 0px 0 white;
+        box-shadow: 10px 10px 0px 0 black;
       }
     }
   }
@@ -57,6 +57,7 @@ const Content = styled.div`
   h2 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: var(--about-accent);
 
     @media screen and (max-width: 480px) {
       margin-bottom: 2rem;
@@ -68,6 +69,7 @@ const Content = styled.div`
     font-size: 3rem;
     margin-bottom: 0.5em;
     line-height: 0.9;
+    color: var(--about-accent);
 
     @media screen and (max-width: 480px) {
       font-size: 2rem;
@@ -76,6 +78,7 @@ const Content = styled.div`
 
   p {
     font-size: 1.2rem;
+    font-weight: 400;
     margin: 1em 0;
     text-align: justify;
 

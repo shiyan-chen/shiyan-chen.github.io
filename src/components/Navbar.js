@@ -17,11 +17,6 @@ const Container = styled.div`
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? '0 4px 8px 0 rgba(0, 0, 0, 0.1)' : 'none'};
   transition: 0.4s all ease;
-
-  /* @media screen and (max-width: 480px) {
-    top: 0;
-    opacity: ${({ scrollNav }) => (scrollNav ? '1' : '0')};
-  } */
 `
 
 const Wrapper = styled.div`
@@ -59,6 +54,13 @@ const Item = styled.div`
   align-items: center;
   margin: 0 1rem;
   cursor: pointer;
+
+  @media screen and (hover: hover) {
+    &:hover {
+      color: var(--highlight);
+      border-bottom: 1px solid var(--highlight);
+    }
+  }
 `
 
 const Btn = styled.div`

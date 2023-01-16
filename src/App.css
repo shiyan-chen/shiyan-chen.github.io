@@ -1,25 +1,31 @@
 :root {
-  --highlight: rgb(0, 136, 255);
-  --darg-bg: rgb(0, 136, 255);
+  --highlight: #ff6700;
+  --dark-bg: black;
+  --light-bg: #ebebeb;
 
   --hero-bg: white;
-  --hero-content: rgb(0, 136, 255);
+  --hero-content: black;
   --hero-subtitle: rgba(51, 51, 51, 0.9);
 
-  --about-bg: var(--darg-bg);
-  --about-content: white;
+  --about-bg: var(--highlight);
+  --about-content: black;
+  --about-accent: black;
 
-  --navbar-bg: white;
+  --navbar-bg: var(--light-bg);
   --navbar-content: black;
 
-  --footer-bg: var(--darg-bg);
+  --project-bg: var(--light-bg);
+  --project-content: black;
+  --project-accent: var(--highlight);
+
+  --footer-bg: var(--dark-bg);
 
   --card-bg: white;
   --card-img-bg: white;
   --card-title: black;
   --card-icon: white;
   --card-discription: white;
-  --card-overlay-bg: hwb(208 0% 0% / 0.95);
+  --card-overlay-bg: var(--highlight);
   --card-overlay-content: white;
 
   --font-display: Lobster, 'Abril Fatface', sans-serif;
@@ -34,7 +40,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--light-bg);
   font-family: var(--font-sans);
 }
 
