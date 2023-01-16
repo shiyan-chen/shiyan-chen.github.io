@@ -30,7 +30,7 @@ const Wrapper = styled.div`
 
 const Logo = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 2rem;
   font-family: Lobster;
@@ -41,6 +41,7 @@ const Items = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 80px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -83,7 +84,9 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-block: auto;
     font-size: 1.8rem;
     cursor: pointer;

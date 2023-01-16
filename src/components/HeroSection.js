@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import PokeMe1 from '../assets/poke-me1.png'
+import PokeMe2 from '../assets/poke-me2.png'
 
 const Container = styled.div`
   width: 100%;
@@ -8,8 +10,55 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   z-index: -2;
+`
+
+const Poke = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-10rem, -15rem);
+  transform: translate(-10rem, -15rem);
+  z-index: 3;
+
+  height: 120px;
+  width: 200px;
+  background-image: url(${PokeMe1});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-100%, -230%);
+    transform: translate(-100%, -230%);
+    z-index: 3;
+
+    height: 120px;
+    width: 200px;
+    background-image: url(${PokeMe2});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media screen and (min-height: 1000px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-100%, -300%);
+    transform: translate(-100%, -300%);
+    z-index: 3;
+
+    height: 120px;
+    width: 200px;
+    background-image: url(${PokeMe2});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 `
 
 const Wrapper = styled.div`
@@ -75,6 +124,7 @@ const Content = styled.div`
 const HeroSection = () => {
   return (
     <Container>
+      <Poke />
       <Wrapper>
         <Space />
         <Content>

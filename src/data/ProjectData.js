@@ -1,23 +1,9 @@
 module.exports = [
   {
-    id: 1,
-    title: 'Ecommerce Webste',
-    subtitle:
-      'Full-stack e-commerce website using Java, Spring Boot and MySQLfull-stack project based on java and springboot',
-    img: require('../assets/ecommerce.png'),
-  },
-  {
     id: 2,
     title: 'Django Twitter',
     subtitle: 'SNS backend service using Python, Django and REST API',
     img: require('../assets/django-twitter.png'),
-  },
-
-  {
-    id: 3,
-    title: 'Augmented Design',
-    subtitle: 'full-stack react project',
-    img: require('../assets/augmented-design.png'),
   },
 
   {
@@ -29,12 +15,25 @@ module.exports = [
   },
 
   {
+    id: 3,
+    title: 'Augmented Design',
+    subtitle: 'full-stack react project',
+    img: require('../assets/augmented-design.png'),
+  },
+
+  {
     id: 5,
     title: 'Dolla',
     subtitle: 'backend project based on python and django',
     img: require('../assets/dolla.png'),
   },
-
+  {
+    id: 1,
+    title: 'Ecommerce Webste',
+    subtitle:
+      'Full-stack e-commerce website using Java, Spring Boot and MySQLfull-stack project based on java and springboot',
+    img: require('../assets/ecommerce.png'),
+  },
   {
     id: 6,
     title: 'Window Tracker',

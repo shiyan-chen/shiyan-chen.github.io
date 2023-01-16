@@ -20,6 +20,8 @@
   --card-overlay-content: white;
 
   --font-display: Lobster, 'Abril Fatface', sans-serif;
+  --font-sans: Roboto, Calibri, 'Trebuchet MS', sans-serif;
+  --font-serif: 'Abril Fatface', Times, serif;
 }
 
 * {
@@ -30,7 +32,7 @@
 
 body {
   background-color: white;
-  font-family: Roboto, Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--font-sans);
 }
 
 canvas {
@@ -55,7 +57,7 @@ canvas {
   canvas {
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -60%);
-    transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -58%);
+    transform: translate(-50%, -58%);
   }
 }

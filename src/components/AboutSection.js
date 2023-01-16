@@ -53,13 +53,20 @@ const ImgWrap = styled.div`
 const Content = styled.div`
   width: 100%;
 
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
+    }
+  }
+
   h1 {
     font-size: 3rem;
     margin-bottom: 0.5em;
-
-    @media screen and (max-width: 768px) {
-      text-align: center;
-    }
+    line-height: 0.9;
 
     @media screen and (max-width: 480px) {
       font-size: 2rem;
@@ -69,7 +76,6 @@ const Content = styled.div`
   p {
     font-size: 1.2rem;
     margin: 1em 0;
-    font-weight: 300;
     text-align: justify;
 
     @media screen and (max-width: 480px) {
@@ -86,7 +92,8 @@ const AboutSection = () => {
           <img src={Profile} />
         </ImgWrap>
         <Content>
-          <h1>About Me</h1>
+          <h2>/ About Me</h2>
+          <h1>Full-Stack Developer & Designer</h1>
           <p>
             Quis amet tempor irure mollit tempor incididunt exercitation magna
             laboris ad excepteur. Cillum non dolore eiusmod id anim minim
