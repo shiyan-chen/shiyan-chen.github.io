@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import { IconContext } from 'react-icons'
+import { FaBars } from 'react-icons/fa'
 
 const Container = styled.div`
   display: flex;
@@ -62,7 +64,7 @@ const Btn = styled.div`
   border: 1px solid var(--navbar-content);
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -74,6 +76,18 @@ const Btn = styled.div`
       border: 1px solid var(--highlight);
       color: var(--navbar-bg);
     }
+  }
+`
+
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin-block: auto;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
   }
 `
 
@@ -112,7 +126,7 @@ const useScrollDirection = () => {
   return scrollDirection
 }
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
@@ -127,6 +141,11 @@ const Navbar = () => {
     <Container scrollNav={scrollNav} scrollDirection={useScrollDirection()}>
       <Wrapper>
         <Logo>Shiyan</Logo>
+        <MobileIcon onClick={toggleSidebar}>
+          <IconContext.Provider value={{ color: 'black' }}>
+            <FaBars />
+          </IconContext.Provider>
+        </MobileIcon>
         <Items>
           <Item>Home</Item>
           <Item>About</Item>

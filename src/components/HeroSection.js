@@ -65,6 +65,10 @@ const Content = styled.div`
         display: none;
       }
     }
+
+    @media screen and (max-width: 480px) {
+      font-size: 4rem;
+    }
   }
 `
 

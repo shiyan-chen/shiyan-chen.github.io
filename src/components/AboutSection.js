@@ -60,6 +60,10 @@ const Content = styled.div`
     @media screen and (max-width: 768px) {
       text-align: center;
     }
+
+    @media screen and (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   p {
@@ -67,6 +71,10 @@ const Content = styled.div`
     margin: 1em 0;
     font-weight: 300;
     text-align: justify;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
   }
 `
 

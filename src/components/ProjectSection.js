@@ -17,6 +17,10 @@ const Title = styled.h1`
   padding-bottom: 1.5em;
   font-size: 3rem;
   color: var(--highlight);
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
 `
 
 const Cards = styled.div`
