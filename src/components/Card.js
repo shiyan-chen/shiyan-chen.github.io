@@ -50,6 +50,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +63,13 @@ const Img = styled.img`
   width: 100%;
   height: 75%;
   object-fit: cover;
-  background-color: var(--card-img-bg);
+  /* filter: grayscale(100%);
+
+  @media screen and (hover: hover) {
+    &:hover {
+      filter: grayscale(0%);
+    }
+  } */
 `
 
 const Content = styled.div`

@@ -58,7 +58,6 @@ const Item = styled.div`
   @media screen and (hover: hover) {
     &:hover {
       color: var(--highlight);
-      border-bottom: 1px solid var(--highlight);
     }
   }
 `
@@ -70,9 +69,8 @@ const Btn = styled.div`
   width: 150px;
   height: 40px;
   border: 1px solid var(--navbar-content);
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: 768px) {
     display: none;

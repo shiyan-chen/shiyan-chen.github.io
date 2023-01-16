@@ -9,8 +9,8 @@ const Container = styled.aside`
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: var(--navbar-bg);
-  color: black;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-content);
   display: grid;
   align-items: center;
   top: ${({ showSidebar }) => (showSidebar ? '0' : '-100%')};
@@ -30,7 +30,13 @@ const Icon = styled.div`
 `
 
 const CloseIcon = styled(FaTimes)`
-  color: black;
+  color: var(--sidebar-content);
+
+  @media screen and (hover: hover) {
+    &:hover {
+      color: var(--sidebar-accent);
+    }
+  }
 `
 
 const Wrapper = styled.div`
@@ -40,11 +46,11 @@ const Wrapper = styled.div`
 const Menu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(5, 80px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(5, 60px);
   }
 `
 
@@ -61,8 +67,7 @@ const SidebarLink = styled.div`
 
   @media screen and (hover: hover) {
     &:hover {
-      color: var(--highlight);
-      /* border-bottom: 2px solid var(--highlight); */
+      color: var(--sidebar-accent);
     }
   }
 `
@@ -76,18 +81,16 @@ const SidebarRoute = styled.div`
   border-radius: 50px;
   white-space: nowrap;
   padding: 16px 64px;
-  color: black;
   border: 2px solid black;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
   text-decoration: none;
 
   @media screen and (hover: hover) {
     &:hover {
-      background-color: var(--highlight);
-      border: 2px solid var(--highlight);
-      color: white;
+      background-color: var(--sidebar-accent);
+      border: 2px solid var(--sidebar-accent);
+      color: var(--sidebar-bg);
     }
   }
 `

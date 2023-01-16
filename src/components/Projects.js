@@ -44,7 +44,7 @@ const Cards = styled.div`
   @media screen and (max-width: 1100px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 740px) {
     grid-template-columns: 1fr;
   }
 `
