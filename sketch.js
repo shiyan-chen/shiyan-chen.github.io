@@ -26,8 +26,6 @@ function setup() {
 }
 
 function draw() {
-  // background(0.98)
-
   fill(myColor)
   blob(radiusDist, width / 2, height / 2, 0.7, t)
   drawFace(t)
