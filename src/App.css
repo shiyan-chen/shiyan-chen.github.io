@@ -9,7 +9,7 @@
 
   --about-bg: var(--highlight);
   --about-content: black;
-  --about-accent: black;
+  --about-accent: white;
 
   --navbar-bg: var(--light-bg);
   --navbar-content: black;
@@ -25,16 +25,15 @@
   --footer-bg: var(--dark-bg);
 
   --card-bg: white;
-  --card-img-bg: white;
-  --card-title: black;
-  --card-icon: white;
-  --card-discription: white;
+  --card-content: black;
   --card-overlay-bg: var(--highlight);
   --card-overlay-content: white;
 
   --font-display: Lobster, 'Abril Fatface', sans-serif;
-  --font-sans: Roboto, Calibri, 'Trebuchet MS', sans-serif;
+  /* --font-sans: Roboto, Calibri, 'Trebuchet MS', sans-serif; */
+  --font-sans: 'Encode Sans Expanded', Calibri, 'Trebuchet MS', sans-serif;
   --font-serif: 'Abril Fatface', Times, serif;
+  --font-txt: Helvetica, sans-serif;
 }
 
 * {
@@ -61,6 +60,31 @@ canvas {
   z-index: -1;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.75em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: var(--font-txt);
+  margin: 1em 0;
+  text-align: justify;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
 @media screen and (max-width: 1200px) {
   canvas {
     top: 50%;
@@ -76,5 +100,19 @@ canvas {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    margin-bottom: 0.75em;
+    font-size: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
   }
 }

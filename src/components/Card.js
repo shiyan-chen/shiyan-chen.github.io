@@ -2,27 +2,32 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Overlay = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   width: 100%;
   height: 0;
   background-color: var(--card-overlay-bg);
-  color: var(--card-overlay-content);
   opacity: 0.95;
   transition: all 0.3s ease-in-out;
   z-index: 2;
 
   div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: var(--card-overlay-content);
     opacity: 0;
     height: 0;
-    margin: 2rem;
-    text-align: left;
     transition: all 0.3s ease-in-out;
+    margin-right: auto;
+
+    h3 {
+      padding-top: 2rem;
+      padding-inline: 2rem;
+      text-align: left;
+    }
+
+    p {
+      padding-inline: 2rem;
+      padding-bottom: 2rem;
+      text-align: left;
+    }
   }
 `
 const Container = styled.div`
@@ -39,12 +44,11 @@ const Container = styled.div`
   cursor: pointer;
 
   &:hover ${Overlay} {
-    height: 100%;
+    height: 75%;
 
     div {
       opacity: 1;
       height: 100%;
-      vertical-align: center;
     }
   }
 `
@@ -78,10 +82,17 @@ const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   h1 {
-    font-size: 1.3rem;
-    color: var(--card-title);
+    font-size: 1rem;
+    margin: 0;
+    color: var(--card-content);
+  }
+
+  div {
+    margin-top: 5px;
+    font-size: 1rem;
   }
 `
 
@@ -89,12 +100,18 @@ const Card = (props) => {
   return (
     <Container>
       <Overlay>
-        <div>{props.subtitle}</div>
+        <div>
+          <h3>Technologies</h3>
+          <p>{props.technologies}</p>
+        </div>
       </Overlay>
       <Wrapper>
         <Img src={props.img} alt='' />
         <Content>
           <h1>{props.title}</h1>
+          <div>
+            <a>code</a> | <a>demo</a>
+          </div>
         </Content>
       </Wrapper>
     </Container>

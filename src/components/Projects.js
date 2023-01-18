@@ -12,28 +12,7 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   background-color: var(--project-bg);
-`
-
-const Subtitle = styled.h2`
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: var(--project-content);
-
-  @media screen and (max-width: 480px) {
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
-  }
-`
-
-const Title = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 1em;
-  line-height: 0.9;
-  color: var(--project-content);
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-  }
+  text-align: center;
 `
 
 const Cards = styled.div`
@@ -56,8 +35,8 @@ const Projects = () => {
 
   return (
     <Container>
-      <Subtitle>/ Projects</Subtitle>
-      <Title>Some Things I'v Built</Title>
+      <h2># Projects</h2>
+      <h1>Things I'v Built</h1>
       <Cards>{cards}</Cards>
     </Container>
   )

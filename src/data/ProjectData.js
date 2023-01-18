@@ -1,67 +1,68 @@
 module.exports = [
   {
     id: 2,
-    title: 'Django Twitter',
-    subtitle: 'SNS backend service using Python, Django and REST API',
+    title: 'Django Twitter Backend Service',
+    technologies:
+      'Python, Django, REST API, MySQL, HBase, Redis, Memcached, RabbitMQ, Amazon S3',
     img: require('../assets/django-twitter.png'),
   },
 
   {
     id: 4,
-    title: 'Unworried Store',
-    subtitle:
-      'Android mobile app for recording and sharing daily worries using Java, Android Studio and Google Firebase',
+    title: 'Unworried Store Mobile App',
+    technologies: 'Java, Android Studio, Google Firebase',
     img: require('../assets/unworried-store.png'),
   },
 
   {
     id: 3,
-    title: 'Augmented Design',
-    subtitle: 'full-stack react project',
+    title: 'Floor Plan Evaluation Website',
+    technologies:
+      'Python, Flask, React.js, HTML, CSS, Javascript, Leaflet, NumPy',
     img: require('../assets/augmented-design.png'),
   },
 
   {
     id: 5,
-    title: 'Dolla',
-    subtitle: 'backend project based on python and django',
+    title: 'Dolla Frontend Website',
+    technologies: 'React.js, Javascript, HTML, CSS',
     img: require('../assets/dolla.png'),
   },
   {
     id: 1,
-    title: 'Ecommerce Webste',
-    subtitle:
-      'Full-stack e-commerce website using Java, Spring Boot and MySQLfull-stack project based on java and springboot',
+    title: 'ShopMe Ecommerce Webste',
+    technologies:
+      'Java, Spring Boot, Hibernate, Thymeleaf, Bootstrap, jQuery, HTML, CSS, Javascript, MySQL, Amazon S3',
     img: require('../assets/ecommerce.png'),
   },
   {
     id: 6,
     title: 'Window Tracker',
-    subtitle: 'backend project based on python and django',
+    technologies: 'React.js, Javascript, HTML, CSS',
     img: require('../assets/window-tracker.png'),
   },
   {
     id: 7,
     title: 'Distributed Document Search System',
-    subtitle: 'backend project based on python and django',
+    technologies: 'Java, Apache Zookeeper, HTML, CSS, Javascript',
     img: require('../assets/document-search.png'),
   },
   {
     id: 8,
-    title: 'Flappy Astronaut',
-    subtitle: 'backend project based on python and django',
+    title: 'Flappy Astronaut Desktop Game',
+    technologies: 'Python, PyGame',
     img: require('../assets/flappy-astronaut.png'),
   },
   {
     id: 9,
     title: 'Bear Maps',
-    subtitle: 'backend project based on python and django',
+    technologies: 'Java, HTML, CSS, Javascript',
     img: require('../assets/bear-maps.png'),
   },
   {
     id: 10,
     title: 'Cool Hero Page',
-    subtitle: 'backend project based on python and django',
+    technologies: 'React.js, ps5j, Javascript, HTML, CSS',
     img: require('../assets/hero-page.png'),
   },
 ]

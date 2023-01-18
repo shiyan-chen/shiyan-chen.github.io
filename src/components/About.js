@@ -9,20 +9,24 @@ const Container = styled.div`
   min-height: 100vh;
   background-color: var(--about-bg);
   color: var(--about-content);
+
+  span {
+    font-weight: 700;
+  }
 `
 
 const Wrapper = styled.div`
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 100px;
   gap: 4rem;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     flex-direction: column-reverse;
-    margin: 100px;
+    margin: 200px;
   }
 `
 
@@ -32,25 +36,25 @@ const ImgWrap = styled.div`
   align-items: center;
 
   img {
-    height: 400px;
+    height: 450px;
     width: auto;
     object-fit: cover;
     border-radius: 15%;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 
-    @media screen and (max-width: 480px) and (hover: none) {
+    @media screen and (max-width: 480px) {
       height: 300px;
-      box-shadow: 8px 8px 0px 0 var(--about-accent);
+      box-shadow: 8px 8px 0px 0 var(--about-content);
     }
 
     @media screen and (min-width: 480px) and (hover: none) {
-      box-shadow: 10px 10px 0px 0 var(--about-accent);
+      box-shadow: 10px 10px 0px 0 var(--about-content);
     }
 
-    @media screen and (hover: hover) {
+    @media screen and (min-width: 480px) and (hover: hover) {
       &:hover {
-        box-shadow: 10px 10px 0px 0 var(--about-accent);
+        box-shadow: 12px 12px 0px 0 var(--about-content);
       }
     }
   }
@@ -58,40 +62,6 @@ const ImgWrap = styled.div`
 
 const Content = styled.div`
   width: 100%;
-
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1em;
-    color: var(--about-accent);
-
-    @media screen and (max-width: 480px) {
-      margin-bottom: 2rem;
-      font-size: 1.3rem;
-    }
-  }
-
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5em;
-    line-height: 0.9;
-    color: var(--about-accent);
-
-    @media screen and (max-width: 480px) {
-      margin-bottom: 1em;
-      font-size: 2rem;
-    }
-  }
-
-  p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 1em 0;
-    text-align: justify;
-
-    @media screen and (max-width: 480px) {
-      font-size: 1rem;
-    }
-  }
 `
 
 const About = () => {
@@ -102,20 +72,40 @@ const About = () => {
           <img src={Profile} />
         </ImgWrap>
         <Content>
-          <h2>/ About Me</h2>
-          <h1>Full-Stack Developer & Designer</h1>
+          <h2># About Me</h2>
+          <h1>Developer, Designer & Architect</h1>
           <p>
-            Quis amet tempor irure mollit tempor incididunt exercitation magna
-            laboris ad excepteur. Cillum non dolore eiusmod id anim minim
-            laboris sit ullamco ut occaecat ullamco anim. Amet nulla laboris
-            culpa dolor Lorem eu. Veniam veniam amet dolor deserunt sunt ex
-            amet. Tempor labore aute pariatur consequat officia dolor.
+            I'm a master's student at Northeastern University - Silicon Valley
+            Campus majoring in <span>Computer Science</span>. I used to studied
+            architecture for six years and earned my first master’s degree in{' '}
+            <span>Architectural Design</span> at UC Berkeley. As an
+            architectural designer, I realized how powerful programming is for
+            architectural design and how interesting programming is to me, which
+            led me to pursue a degree in Computer Science. As a{' '}
+            <span>full-stack developer</span>, I realized how important
+            architecture is to me as it teaches me to think systematically and
+            design in detail.
           </p>
           <p>
-            Minim qui ad incididunt id. Quis amet tempor irure mollit tempor
-            incididunt exercitation magna laboris ad excepteur. Cillum non
-            dolore eiusmod id anim minim laboris sit ullamco ut occaecat ullamco
-            anim.
+            I have lots of practical experience in{' '}
+            <span>software development</span>. For example, I developed a{' '}
+            <span>low-latency twitter backend service</span> using Python and
+            Django, a <span>full-stack e-commerce website</span> using Java and
+            Spring Boot. I also worked with a team of three to develop an{' '}
+            <span>Android mobile app</span> called Unworried Store for recording
+            and sharing users’ daily worries. I love what I’m doing, but now I’m
+            ready for a more challenging assignment. I am looking for the
+            opportunity to work with professional development teams to
+            accomplish innovative and challenging projects. If you consider
+            offering me this great opportunity, please check my{' '}
+            <span>
+              <a href='https://www.linkedin.com/in/shiyan-chen22/'>LinkedIn</a>
+            </span>{' '}
+            page and feel free to{' '}
+            <span>
+              <a href='mailto: c.shiyan22@gmail.com'>email</a>
+            </span>{' '}
+            me.
           </p>
         </Content>
       </Wrapper>
