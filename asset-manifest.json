@@ -1,26 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.416d06ba.css",
-    "main.js": "/static/js/main.df696285.js",
+    "main.js": "/static/js/main.0ab7dd10.js",
     "static/media/hero-page.png": "/static/media/hero-page.59c533d377dfdddf5cb2.png",
     "static/media/unworried-store.png": "/static/media/unworried-store.d7b741668bdabf329a66.png",
     "static/media/dolla.png": "/static/media/dolla.3c10df7bfe25111b8f7d.png",
     "static/media/bear-maps.png": "/static/media/bear-maps.e17d5f01b1669184ca47.png",
     "static/media/django-twitter.png": "/static/media/django-twitter.c2a2217c4f1199b6f363.png",
     "static/media/ecommerce.png": "/static/media/ecommerce.d6f3e471d1f126afbdbb.png",
+    "static/media/maze-game.jpg": "/static/media/maze-game.c79ead0dd4ab073d266e.jpg",
     "static/media/flappy-astronaut.png": "/static/media/flappy-astronaut.f611b47a9e7ed7586b89.png",
     "static/media/profile.jpeg": "/static/media/profile.f0512cd97b16f36960f3.jpeg",
     "static/media/augmented-design.png": "/static/media/augmented-design.b33fd83cf2d0c1e9b8ee.png",
     "static/media/document-search.png": "/static/media/document-search.503969ebaefe7290c68e.png",
+    "static/media/personal-website.png": "/static/media/personal-website.a76bd39d8c545c0bb9a9.png",
     "static/media/window-tracker.png": "/static/media/window-tracker.e66290c1da15e1298759.png",
     "static/media/poke-me1.png": "/static/media/poke-me1.26276f150ce5c6671488.png",
     "static/media/poke-me2.png": "/static/media/poke-me2.19f8385ffd7fa2bce677.png",
     "index.html": "/index.html",
     "main.416d06ba.css.map": "/static/css/main.416d06ba.css.map",
-    "main.df696285.js.map": "/static/js/main.df696285.js.map"
+    "main.0ab7dd10.js.map": "/static/js/main.0ab7dd10.js.map"
   },
   "entrypoints": [
     "static/css/main.416d06ba.css",
-    "static/js/main.df696285.js"
+    "static/js/main.0ab7dd10.js"
   ]
 }
