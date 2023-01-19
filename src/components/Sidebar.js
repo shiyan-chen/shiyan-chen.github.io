@@ -32,10 +32,8 @@ const Icon = styled.div`
 const CloseIcon = styled(FaTimes)`
   color: var(--sidebar-content);
 
-  @media screen and (hover: hover) {
-    &:hover {
-      color: var(--sidebar-accent);
-    }
+  &:hover {
+    color: var(--sidebar-accent);
   }
 `
 
@@ -65,10 +63,8 @@ const SidebarLink = styled.div`
   padding-inline: 1rem;
   cursor: pointer;
 
-  @media screen and (hover: hover) {
-    &:hover {
-      color: var(--sidebar-accent);
-    }
+  &:hover {
+    color: var(--sidebar-accent);
   }
 `
 
@@ -86,12 +82,10 @@ const SidebarRoute = styled.div`
   cursor: pointer;
   text-decoration: none;
 
-  @media screen and (hover: hover) {
-    &:hover {
-      background-color: var(--sidebar-accent);
-      border: 2px solid var(--sidebar-accent);
-      color: var(--sidebar-bg);
-    }
+  &:hover {
+    background-color: var(--sidebar-accent);
+    border: 2px solid var(--sidebar-accent);
+    color: var(--sidebar-bg);
   }
 `
 

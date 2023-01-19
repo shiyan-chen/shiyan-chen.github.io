@@ -38,13 +38,13 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 0px;
+  border-radius: 10px;
   background-color: var(--card-bg);
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1), 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  overflow: hidden;
 
   &:hover ${Overlay} {
-    height: 75%;
+    height: 74%;
 
     div {
       opacity: 1;
@@ -110,7 +110,17 @@ const Card = (props) => {
         <Content>
           <h1>{props.title}</h1>
           <div>
-            <a>code</a> | <a>demo</a>
+            {props.code && (
+              <a href={props.code} target='_blank' rel='noopener noreferrer'>
+                code
+              </a>
+            )}{' '}
+            {props.code && props.demo && '|'}{' '}
+            {props.demo && (
+              <a href={props.demo} target='_blank' rel='noopener noreferrer'>
+                demo
+              </a>
+            )}
           </div>
         </Content>
       </Wrapper>

@@ -25,8 +25,9 @@ const Wrapper = styled.div`
   gap: 4rem;
 
   @media screen and (max-width: 1100px) {
+    max-width: 1100px;
     flex-direction: column-reverse;
-    margin: 200px;
+    margin-inline: 200px;
   }
 `
 
@@ -75,16 +76,16 @@ const About = () => {
           <h2># About Me</h2>
           <h1>Developer, Designer & Architect</h1>
           <p>
-            I'm a master's student at Northeastern University - Silicon Valley
-            Campus majoring in <span>Computer Science</span>. I used to studied
-            architecture for six years and earned my first master’s degree in{' '}
-            <span>Architectural Design</span> at UC Berkeley. As an
-            architectural designer, I realized how powerful programming is for
-            architectural design and how interesting programming is to me, which
-            led me to pursue a degree in Computer Science. As a{' '}
-            <span>full-stack developer</span>, I realized how important
-            architecture is to me as it teaches me to think systematically and
-            design in detail.
+            I'm a master's student at <span>Northeastern University</span> -
+            Silicon Valley Campus majoring in <span>Computer Science</span>. I
+            used to studied architecture for six years and earned my first
+            master’s degree in <span>Architectural Design</span> at{' '}
+            <span>UC Berkeley</span>. As an architectural designer, I realized
+            how powerful programming is for architectural design and how
+            interesting programming is to me, which led me to pursue a degree in
+            Computer Science. As a <span>full-stack developer</span>, I realized
+            how important architecture is to me as it teaches me to think
+            systematically and design in detail.
           </p>
           <p>
             I have lots of practical experience in{' '}
