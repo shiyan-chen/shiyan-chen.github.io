@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.416d06ba.css",
-    "main.js": "/static/js/main.0ab7dd10.js",
+    "main.css": "/static/css/main.5523728d.css",
+    "main.js": "/static/js/main.487e759f.js",
     "static/media/hero-page.png": "/static/media/hero-page.59c533d377dfdddf5cb2.png",
     "static/media/unworried-store.png": "/static/media/unworried-store.d7b741668bdabf329a66.png",
     "static/media/dolla.png": "/static/media/dolla.3c10df7bfe25111b8f7d.png",
@@ -13,16 +13,16 @@
     "static/media/profile.jpeg": "/static/media/profile.f0512cd97b16f36960f3.jpeg",
     "static/media/augmented-design.png": "/static/media/augmented-design.b33fd83cf2d0c1e9b8ee.png",
     "static/media/document-search.png": "/static/media/document-search.503969ebaefe7290c68e.png",
-    "static/media/personal-website.png": "/static/media/personal-website.a76bd39d8c545c0bb9a9.png",
+    "static/media/personal-website.png": "/static/media/personal-website.881398136772c1d7ca86.png",
     "static/media/window-tracker.png": "/static/media/window-tracker.e66290c1da15e1298759.png",
     "static/media/poke-me1.png": "/static/media/poke-me1.26276f150ce5c6671488.png",
     "static/media/poke-me2.png": "/static/media/poke-me2.19f8385ffd7fa2bce677.png",
     "index.html": "/index.html",
-    "main.416d06ba.css.map": "/static/css/main.416d06ba.css.map",
-    "main.0ab7dd10.js.map": "/static/js/main.0ab7dd10.js.map"
+    "main.5523728d.css.map": "/static/css/main.5523728d.css.map",
+    "main.487e759f.js.map": "/static/js/main.487e759f.js.map"
   },
   "entrypoints": [
-    "static/css/main.416d06ba.css",
-    "static/js/main.0ab7dd10.js"
+    "static/css/main.5523728d.css",
+    "static/js/main.487e759f.js"
   ]
 }
