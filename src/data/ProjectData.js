@@ -23,22 +23,6 @@ module.exports = [
     code: 'https://github.com/shiyan-chen/react-dolla',
     demo: 'https://shiyan-chen.github.io/react-dolla/',
   },
-  {
-    id: 'cool-hero',
-    title: 'Cool Hero Page',
-    technologies: 'React.js, ps5j, Javascript, HTML, CSS',
-    img: require('../assets/hero-page.png'),
-    code: 'https://github.com/shiyan-chen/banner-design-1',
-    demo: 'https://shiyan-chen.github.io/banner-design-1/',
-  },
-  {
-    id: 'window-tracker',
-    title: 'Window Tracker',
-    technologies: 'React.js, Javascript, HTML, CSS',
-    img: require('../assets/window-tracker.png'),
-    code: 'https://github.com/shiyan-chen/window-tracker',
-    demo: 'https://shiyan-chen.github.io/window-tracker/',
-  },
 
   {
     id: 'django-twitter',
@@ -50,15 +34,6 @@ module.exports = [
     demo: '',
   },
   {
-    id: 'floorplan-eval',
-    title: 'Floor Plan Evaluation Website',
-    technologies:
-      'Python, Flask, React.js, HTML, CSS, Javascript, Leaflet, NumPy',
-    img: require('../assets/augmented-design.png'),
-    code: 'https://github.com/shiyan-chen/floor-plan-evaluation',
-    demo: '',
-  },
-  {
     id: 'shopme-ecommerce',
     title: 'ShopMe Ecommerce Webste',
     technologies:
@@ -67,6 +42,16 @@ module.exports = [
     code: 'https://github.com/shiyan-chen/shopme-ecommerce',
     demo: '',
   },
+  {
+    id: 'floorplan-eval',
+    title: 'Floor Plan Evaluation Website',
+    technologies:
+      'Python, Flask, React.js, HTML, CSS, Javascript, Leaflet, NumPy',
+    img: require('../assets/augmented-design.png'),
+    code: 'https://github.com/shiyan-chen/floor-plan-evaluation',
+    demo: '',
+  },
+
   {
     id: 'distributed-doc',
     title: 'Distributed Document Search',
@@ -91,6 +76,24 @@ module.exports = [
     code: 'https://github.com/shiyan-chen/bear-maps',
     demo: '',
   },
+  {
+    id: 'window-tracker',
+    title: 'Window Tracker',
+    technologies: 'React.js, Javascript, HTML, CSS',
+    img: require('../assets/window-tracker.png'),
+    code: 'https://github.com/shiyan-chen/window-tracker',
+    demo: 'https://shiyan-chen.github.io/window-tracker/',
+  },
+
+  {
+    id: 'cool-hero',
+    title: 'Cool Hero Page',
+    technologies: 'React.js, ps5j, Javascript, HTML, CSS',
+    img: require('../assets/hero-page.png'),
+    code: 'https://github.com/shiyan-chen/banner-design-1',
+    demo: 'https://shiyan-chen.github.io/banner-design-1/',
+  },
+
   {
     id: 'maze-game',
     title: '2D Tile-based Maze',

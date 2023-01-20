@@ -85,6 +85,12 @@ const Btn = styled.a`
       color: var(--navbar-bg);
     }
   }
+
+  &:avtive {
+    background-color: var(--navbar-accent);
+    border: 1px solid var(--navbar-accent);
+    color: var(--navbar-bg);
+  }
 `
 
 export const MobileIcon = styled.div`

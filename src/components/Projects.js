@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import Card from './Card'
@@ -52,10 +52,43 @@ const Cards = styled.div`
   }
 `
 
+const Btn = styled.div`
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  border: 1px solid var(--navbar-content);
+  border-radius: 50px;
+  cursor: pointer;
+
+  @media screen and (hover: hover) {
+    &:hover {
+      background-color: var(--navbar-accent);
+      border: 1px solid var(--navbar-accent);
+      color: var(--navbar-bg);
+    }
+  }
+
+  &:avtive {
+    background-color: var(--navbar-accent);
+    border: 1px solid var(--navbar-accent);
+    color: var(--navbar-bg);
+  }
+`
+
 const Projects = () => {
+  const [showMore, setShowMore] = useState(false)
+  const toggle = () => {
+    setShowMore((prev) => !prev)
+  }
+
+  const GRID_LIMIT = 6
   const cards = ProjectData.map((item) => {
     return <Card key={item.id} {...item} />
   })
+  const firstSix = cards.slice(0, GRID_LIMIT)
 
   return (
     <Container id='projects'>
@@ -63,7 +96,8 @@ const Projects = () => {
       <h1>
         Frontend, Backend & <span>Fullstack</span>
       </h1>
-      <Cards>{cards}</Cards>
+      <Cards>{showMore ? cards : firstSix}</Cards>
+      <Btn onClick={toggle}>{showMore ? 'Show Less' : 'Show More'}</Btn>
     </Container>
   )
 }

@@ -71,6 +71,12 @@ const Btn = styled.div`
       color: var(--navbar-bg);
     }
   }
+
+  &:avtive {
+    background-color: var(--navbar-accent);
+    border: 1px solid var(--navbar-accent);
+    color: var(--navbar-bg);
+  }
 `
 
 const Contact = () => {

@@ -40,7 +40,7 @@ const Container = styled.div`
   text-align: center;
   border-radius: 10px;
   background-color: var(--card-bg);
-  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1), 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 0px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

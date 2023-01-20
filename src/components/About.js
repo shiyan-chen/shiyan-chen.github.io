@@ -77,7 +77,7 @@ const About = () => {
           <p>
             I'm a master's student at <span>Northeastern University</span> -
             Silicon Valley Campus majoring in <span>Computer Science</span>. I
-            used to studied architecture for six years and earned my first
+            used to study architecture for six years and earned my first
             master’s degree in <span>Architectural Design</span> at{' '}
             <span>UC Berkeley</span>. As an architectural designer, I realized
             how powerful programming is for architectural design and how
