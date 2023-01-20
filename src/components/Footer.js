@@ -1,17 +1,13 @@
 import React from 'react'
-import {
-  FaGithub,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-} from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 
 import styled from 'styled-components'
 // import { Link } from 'react-router-dom'
 
 const Container = styled.footer`
   background-color: var(--footer-bg);
+  color: var(--footer-content);
 `
 
 const Wrapper = styled.div`
@@ -41,8 +37,8 @@ const SocialMediaWrap = styled.div`
   }
 `
 
-const SocialLogo = styled.div`
-  color: white;
+const SocialLogo = styled.a`
+  text-decoration: none;
   justify-self: start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -53,7 +49,6 @@ const SocialLogo = styled.div`
 `
 
 const WebsiteRights = styled.small`
-  color: white;
   margin-bottom: 16px;
 `
 
@@ -65,7 +60,6 @@ const SocialIcons = styled.div`
 `
 
 const SocialIconLink = styled.a`
-  color: white;
   font-size: 24px;
 `
 
@@ -75,45 +69,50 @@ const Footer = () => {
       <Wrapper>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo>Shiyan</SocialLogo>
+            <SocialLogo href='#hero'>Shiyan</SocialLogo>
             <WebsiteRights>
               Shiyan Chen &copy; {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink
-                href='//www.facebook.com'
+                href='https://github.com/shiyan-chen'
                 target='_blank'
-                aria-label='Facebook'
+                rel='noopener noreferrer'
+                aria-label='Github'
               >
                 <FaGithub />
               </SocialIconLink>
               <SocialIconLink
-                href='//www.instagram.com'
+                href='https://www.instagram.com/shiyan_1097/'
                 target='_blank'
+                rel='noopener noreferrer'
                 aria-label='Instagram'
               >
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
-                href='//www.youtube.com'
+                href='https://www.youtube.com/@shiyanchen7285'
                 target='_blank'
+                rel='noopener noreferrer'
                 aria-label='Youtube'
               >
                 <FaYoutube />
               </SocialIconLink>
               <SocialIconLink
-                href='//www.twitter.com'
+                href='https://www.linkedin.com/in/shiyan-chen22/'
                 target='_blank'
-                aria-label='Twitter'
-              >
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink
-                href='//www.linkedin.com'
-                target='_blank'
+                rel='noopener noreferrer'
                 aria-label='Linkedin'
               >
                 <FaLinkedin />
+              </SocialIconLink>
+              <SocialIconLink
+                href='mailto:c.shiyan22@gmail.com'
+                target='_blank'
+                rel='noopener noreferrer'
+                aria-label='Gmail'
+              >
+                <SiGmail />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

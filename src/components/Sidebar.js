@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaTimes } from 'react-icons/fa'
-// import { Link as LinkR } from 'react-router-dom'
-// import { Link as LinkS } from 'react-scroll'
 
 const Container = styled.aside`
   position: fixed;
@@ -52,7 +50,7 @@ const Menu = styled.ul`
   }
 `
 
-const SidebarLink = styled.div`
+const SidebarLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +71,7 @@ const SideBtn = styled.div`
   justify-content: center;
 `
 
-const SidebarRoute = styled.div`
+const SidebarRoute = styled.a`
   border-radius: 50px;
   white-space: nowrap;
   padding: 16px 64px;
@@ -91,19 +89,34 @@ const SidebarRoute = styled.div`
 
 const Sidebar = ({ showSidebar, toggleSidebar }) => {
   return (
-    <Container showSidebar={showSidebar} onClick={toggleSidebar}>
+    <Container showSidebar={showSidebar}>
       <Icon onClick={toggleSidebar}>
-        <CloseIcon onClick={toggleSidebar} />
+        <CloseIcon />
       </Icon>
       <Wrapper>
         <Menu>
-          <SidebarLink onClick={toggleSidebar}>Home</SidebarLink>
-          <SidebarLink onClick={toggleSidebar}>About</SidebarLink>
-          <SidebarLink onClick={toggleSidebar}>Projects</SidebarLink>
-          <SidebarLink onClick={toggleSidebar}>Contact</SidebarLink>
+          <SidebarLink href='#hero' onClick={toggleSidebar}>
+            Home
+          </SidebarLink>
+          <SidebarLink href='#about' onClick={toggleSidebar}>
+            About
+          </SidebarLink>
+          <SidebarLink href='#projects' onClick={toggleSidebar}>
+            Projects
+          </SidebarLink>
+          <SidebarLink href='#contact' onClick={toggleSidebar}>
+            Contact
+          </SidebarLink>
         </Menu>
         <SideBtn>
-          <SidebarRoute to='/signin'>Download CV</SidebarRoute>
+          <SidebarRoute
+            href='/resume.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            onClick={toggleSidebar}
+          >
+            My Resume
+          </SidebarRoute>
         </SideBtn>
       </Wrapper>
     </Container>

@@ -42,6 +42,10 @@ const Container = styled.div`
   background-color: var(--card-bg);
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1), 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 
   &:hover ${Overlay} {
     height: 74%;
@@ -67,13 +71,6 @@ const Img = styled.img`
   width: 100%;
   height: 75%;
   object-fit: cover;
-  /* filter: grayscale(100%);
-
-  @media screen and (hover: hover) {
-    &:hover {
-      filter: grayscale(0%);
-    }
-  } */
 `
 
 const Content = styled.div`
@@ -83,16 +80,25 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+`
 
-  h1 {
-    font-size: 1rem;
-    margin: 0;
-    color: var(--card-content);
-  }
+const Title = styled.h3`
+  font-size: 1rem;
+  color: var(--card-content);
+`
 
-  div {
-    margin-top: 5px;
-    font-size: 1rem;
+const Links = styled.div`
+  margin-top: 5px;
+  font-size: 1rem;
+
+  a {
+    text-decoration: underline;
+
+    @media screen and (hover: hover) {
+      &:hover {
+        color: var(--card-accent);
+      }
+    }
   }
 `
 
@@ -108,8 +114,8 @@ const Card = (props) => {
       <Wrapper>
         <Img src={props.img} alt='' />
         <Content>
-          <h1>{props.title}</h1>
-          <div>
+          <Title>{props.title}</Title>
+          <Links>
             {props.code && (
               <a href={props.code} target='_blank' rel='noopener noreferrer'>
                 code
@@ -121,7 +127,7 @@ const Card = (props) => {
                 demo
               </a>
             )}
-          </div>
+          </Links>
         </Content>
       </Wrapper>
     </Container>

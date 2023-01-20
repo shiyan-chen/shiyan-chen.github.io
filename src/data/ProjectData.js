@@ -69,7 +69,7 @@ module.exports = [
   },
   {
     id: 'distributed-doc',
-    title: 'Distributed Document Search System',
+    title: 'Distributed Document Search',
     technologies: 'Java, Apache Zookeeper, HTML, CSS, Javascript',
     img: require('../assets/document-search.png'),
     code: 'https://github.com/shiyan-chen/distributed-document-search-system',

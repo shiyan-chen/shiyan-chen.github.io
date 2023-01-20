@@ -25,7 +25,6 @@ const Wrapper = styled.div`
   gap: 4rem;
 
   @media screen and (max-width: 1100px) {
-    max-width: 1100px;
     flex-direction: column-reverse;
     margin-inline: 200px;
   }
@@ -67,7 +66,7 @@ const Content = styled.div`
 
 const About = () => {
   return (
-    <Container>
+    <Container id='about'>
       <Wrapper>
         <ImgWrap>
           <img src={Profile} />
@@ -100,11 +99,23 @@ const About = () => {
             accomplish innovative and challenging projects. If you consider
             offering me this great opportunity, please check my{' '}
             <span>
-              <a href='https://www.linkedin.com/in/shiyan-chen22/'>LinkedIn</a>
+              <a
+                href='https://www.linkedin.com/in/shiyan-chen22/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                LinkedIn
+              </a>
             </span>{' '}
             page and feel free to{' '}
             <span>
-              <a href='mailto: c.shiyan22@gmail.com'>email</a>
+              <a
+                href='mailto:c.shiyan22@gmail.com'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                email
+              </a>
             </span>{' '}
             me.
           </p>

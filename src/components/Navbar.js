@@ -28,7 +28,8 @@ const Wrapper = styled.div`
   align-items: center;
 `
 
-const Logo = styled.div`
+const Logo = styled.a`
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,14 +42,15 @@ const Items = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 80px;
+  padding-left: 60px;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `
 
-const Item = styled.div`
+const Item = styled.a`
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,12 +59,12 @@ const Item = styled.div`
 
   @media screen and (hover: hover) {
     &:hover {
-      color: var(--highlight);
+      color: var(--navbar-accent);
     }
   }
 `
 
-const Btn = styled.div`
+const Btn = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,8 +80,8 @@ const Btn = styled.div`
 
   @media screen and (hover: hover) {
     &:hover {
-      background-color: var(--highlight);
-      border: 1px solid var(--highlight);
+      background-color: var(--navbar-accent);
+      border: 1px solid var(--navbar-accent);
       color: var(--navbar-bg);
     }
   }
@@ -148,19 +150,21 @@ const Navbar = ({ toggleSidebar }) => {
   return (
     <Container scrollNav={scrollNav} scrollDirection={useScrollDirection()}>
       <Wrapper>
-        <Logo>Shiyan</Logo>
+        <Logo href='#hero'>Shiyan</Logo>
         <MobileIcon onClick={toggleSidebar}>
           <IconContext.Provider value={{ color: 'black' }}>
             <FaBars />
           </IconContext.Provider>
         </MobileIcon>
         <Items>
-          <Item>Home</Item>
-          <Item>About</Item>
-          <Item>Projects</Item>
-          <Item>Contact</Item>
+          <Item href='#hero'>Home</Item>
+          <Item href='#about'>About</Item>
+          <Item href='#projects'>Projects</Item>
+          <Item href='#contact'>Contact</Item>
         </Items>
-        <Btn>Download CV</Btn>
+        <Btn href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
+          My Resume
+        </Btn>
       </Wrapper>
     </Container>
   )

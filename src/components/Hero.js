@@ -122,7 +122,7 @@ const Content = styled.div`
 
 const Hero = () => {
   return (
-    <Container>
+    <Container id='hero'>
       <Poke />
       <Wrapper>
         <Space />
