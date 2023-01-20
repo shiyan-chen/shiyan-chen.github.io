@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5523728d.css",
-    "main.js": "/static/js/main.487e759f.js",
+    "main.css": "/static/css/main.78f495a6.css",
+    "main.js": "/static/js/main.28aee83d.js",
     "static/media/hero-page.png": "/static/media/hero-page.59c533d377dfdddf5cb2.png",
     "static/media/unworried-store.png": "/static/media/unworried-store.d7b741668bdabf329a66.png",
     "static/media/dolla.png": "/static/media/dolla.3c10df7bfe25111b8f7d.png",
@@ -17,12 +17,13 @@
     "static/media/window-tracker.png": "/static/media/window-tracker.e66290c1da15e1298759.png",
     "static/media/poke-me1.png": "/static/media/poke-me1.26276f150ce5c6671488.png",
     "static/media/poke-me2.png": "/static/media/poke-me2.19f8385ffd7fa2bce677.png",
+    "static/media/mail.svg": "/static/media/mail.c63cdaac9b4f12037f9883606e8e0b0c.svg",
     "index.html": "/index.html",
-    "main.5523728d.css.map": "/static/css/main.5523728d.css.map",
-    "main.487e759f.js.map": "/static/js/main.487e759f.js.map"
+    "main.78f495a6.css.map": "/static/css/main.78f495a6.css.map",
+    "main.28aee83d.js.map": "/static/js/main.28aee83d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5523728d.css",
-    "static/js/main.487e759f.js"
+    "static/css/main.78f495a6.css",
+    "static/js/main.28aee83d.js"
   ]
 }
