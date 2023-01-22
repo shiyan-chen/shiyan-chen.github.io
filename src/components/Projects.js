@@ -18,10 +18,6 @@ const Container = styled.div`
     margin-inline: 100px;
   }
 
-  span {
-    white-space: nowrap;
-  }
-
   @media screen and (max-width: 480px) {
     text-align: left;
 
@@ -93,9 +89,7 @@ const Projects = () => {
   return (
     <Container id='projects'>
       <h2># Projects</h2>
-      <h1>
-        Frontend, Backend & <span>Fullstack</span>
-      </h1>
+      <h1>Frontend, Backend & Fullstack</h1>
       <Cards>{showMore ? cards : firstSix}</Cards>
       <Btn onClick={toggle}>{showMore ? 'Show Less' : 'Show More'}</Btn>
     </Container>

@@ -75,29 +75,31 @@ const About = () => {
           <h2># About Me</h2>
           <h1>Developer, Designer & Architect</h1>
           <p>
-            I'm a master's student at <span>Northeastern University</span> -
-            Silicon Valley Campus majoring in <span>Computer Science</span>. I
-            used to study architecture for six years and earned my first
-            master’s degree in <span>Architectural Design</span> at{' '}
+            Hello, I am a <span>full-stack software developer</span> currently
+            pursuing a second <span>master’s degree in Computer Science</span>{' '}
+            at <span>Northeastern University</span>. I previously studied
+            architecture for six years and earned my{' '}
+            <span>bachelor's degree in Architecture</span> from{' '}
+            <span>Huazhong University of Sci & Tech</span> (China) and my first{' '}
+            <span>master's degree in Advanced Architectural Design</span> from{' '}
             <span>UC Berkeley</span>. As an architectural designer, I realized
             how powerful programming is for architectural design and how
             interesting programming is to me, which led me to pursue a degree in
-            Computer Science. As a <span>full-stack developer</span>, I realized
-            how important architecture is to me as it teaches me to think
-            systematically and design in detail.
+            Computer Science. As a full-stack developer, architecture teaches me
+            to think systematically and to design in detail.
           </p>
           <p>
             I have lots of practical experience in{' '}
             <span>software development</span>. For example, I developed a{' '}
             <span>low-latency twitter backend service</span> using Python and
-            Django, a <span>full-stack e-commerce website</span> using Java and
-            Spring Boot. I also worked with a team of three to develop an{' '}
-            <span>Android mobile app</span> called Unworried Store for recording
-            and sharing users’ daily worries. I love what I’m doing, but now I’m
-            ready for a more challenging assignment. I am looking for the
-            opportunity to work with professional development teams to
-            accomplish innovative and challenging projects. If you consider
-            offering me this great opportunity, please check my{' '}
+            Django, as well as a <span>full-stack e-commerce website</span>{' '}
+            using Java and Spring Boot. I also worked with a team of three to
+            develop an <span>Android mobile app, Unworried Store</span>, for
+            recording and sharing users’ daily worries. I love what I’m doing,
+            but now I’m ready for a more challenging assignment. I am looking
+            for the opportunity to work with professional development teams to
+            accomplish innovative and challenging projects. If you would like to
+            offer me this opportunity, please check my{' '}
             <span>
               <a
                 href='https://www.linkedin.com/in/shiyan-chen22/'

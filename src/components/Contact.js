@@ -89,7 +89,7 @@ const Contact = () => {
           <p>
             I am currently looking for coop and internship opportunities from
             May 2023 to May 2024. If you'd like to offer me an internship or job
-            opportunity or any other form of cooperation, welcome to email me.
+            opportunity or any other form of cooperation, please email me.
           </p>
           <Btn>
             <a
