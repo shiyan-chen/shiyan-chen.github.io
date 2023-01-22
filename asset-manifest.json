@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.76c8e131.css",
-    "main.js": "/static/js/main.727124a0.js",
+    "main.js": "/static/js/main.a575ce92.js",
     "static/media/bear-maps.png": "/static/media/bear-maps.e17d5f01b1669184ca47.png",
     "static/media/django-twitter.png": "/static/media/django-twitter.c2a2217c4f1199b6f363.png",
     "static/media/ecommerce.png": "/static/media/ecommerce.d6f3e471d1f126afbdbb.png",
@@ -10,9 +10,9 @@
     "static/media/flappy-astronaut.png": "/static/media/flappy-astronaut.f611b47a9e7ed7586b89.png",
     "static/media/profile.jpeg": "/static/media/profile.f0512cd97b16f36960f3.jpeg",
     "static/media/augmented-design.png": "/static/media/augmented-design.b33fd83cf2d0c1e9b8ee.png",
+    "static/media/unworried-store.png": "/static/media/unworried-store.b1f5489e591d1f3e2ea3.png",
     "static/media/document-search.png": "/static/media/document-search.503969ebaefe7290c68e.png",
     "static/media/dolla.png": "/static/media/dolla.a248b7969abe79a3da8c.png",
-    "static/media/unworried-store.png": "/static/media/unworried-store.179fd05fbe7cb2162df6.png",
     "static/media/personal-website.png": "/static/media/personal-website.d64ffd1c4f306dc772eb.png",
     "static/media/window-tracker.png": "/static/media/window-tracker.e66290c1da15e1298759.png",
     "static/media/poke-me1.png": "/static/media/poke-me1.26276f150ce5c6671488.png",
@@ -20,10 +20,10 @@
     "static/media/mail.svg": "/static/media/mail.c63cdaac9b4f12037f9883606e8e0b0c.svg",
     "index.html": "/index.html",
     "main.76c8e131.css.map": "/static/css/main.76c8e131.css.map",
-    "main.727124a0.js.map": "/static/js/main.727124a0.js.map"
+    "main.a575ce92.js.map": "/static/js/main.a575ce92.js.map"
   },
   "entrypoints": [
     "static/css/main.76c8e131.css",
-    "static/js/main.727124a0.js"
+    "static/js/main.a575ce92.js"
   ]
 }
