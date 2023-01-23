@@ -1,4 +1,4 @@
-// By Roni Kaufman
+// @ Roni Kaufman
 
 let t = 0
 let step = 0.01
