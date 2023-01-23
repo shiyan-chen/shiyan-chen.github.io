@@ -68,28 +68,48 @@ const Btn = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 150px;
   height: 40px;
   border: 1px solid var(--navbar-content);
+  color: var(--black);
   border-radius: 50px;
   cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 
-  @media screen and (max-width: 768px) {
-    display: none;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    background-color: var(--navbar-accent);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  span {
+    z-index: 3;
   }
 
   @media screen and (hover: hover) {
     &:hover {
-      background-color: var(--navbar-accent);
       border: 1px solid var(--navbar-accent);
-      color: var(--navbar-bg);
+      color: var(--white);
+    }
+
+    &:hover::before {
+      width: 160px;
+      height: 160px;
     }
   }
 
-  &:avtive {
-    background-color: var(--navbar-accent);
-    border: 1px solid var(--navbar-accent);
-    color: var(--navbar-bg);
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `
 
@@ -169,7 +189,7 @@ const Navbar = ({ toggleSidebar }) => {
           <Item href='#contact'>Contact</Item>
         </Items>
         <Btn href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
-          My Resume
+          <span>My Resume</span>
         </Btn>
       </Wrapper>
     </Container>

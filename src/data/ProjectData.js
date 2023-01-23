@@ -2,10 +2,11 @@ module.exports = [
   {
     id: 'personal-website',
     title: 'Personal Website',
-    technologies: 'React.js, p5js, Javascript, HTML, CSS',
+    technologies: 'React.js, p5js, styled-components, Javascript, HTML, CSS',
     img: require('../assets/personal-website.png'),
     code: 'https://github.com/shiyan-chen/shiyan-chen.github.io',
     demo: 'https://shiyan-chen.github.io/',
+    color: '#FF630F',
   },
   {
     id: 'unworried-store',
@@ -14,14 +15,16 @@ module.exports = [
     img: require('../assets/unworried-store.png'),
     code: 'https://github.com/shiyan-chen/unworried-store',
     demo: 'https://youtu.be/Y6ALKA49LFk',
+    color: '#7BB000',
   },
   {
     id: 'react-dolla',
     title: 'Dolla Frontend Website',
-    technologies: 'React.js, Javascript, HTML, CSS',
+    technologies: 'React.js, styled-components, Javascript, HTML, CSS',
     img: require('../assets/dolla.png'),
     code: 'https://github.com/shiyan-chen/react-dolla',
     demo: 'https://shiyan-chen.github.io/react-dolla/',
+    color: '#0DC16B',
   },
 
   {
@@ -32,6 +35,7 @@ module.exports = [
     img: require('../assets/django-twitter.png'),
     code: 'https://github.com/shiyan-chen/django-twitter',
     demo: '',
+    color: '',
   },
   {
     id: 'shopme-ecommerce',
@@ -41,15 +45,17 @@ module.exports = [
     img: require('../assets/ecommerce.png'),
     code: 'https://github.com/shiyan-chen/shopme-ecommerce',
     demo: '',
+    color: '',
   },
   {
     id: 'floorplan-eval',
     title: 'Floor Plan Evaluation Website',
     technologies:
       'Python, Flask, React.js, HTML, CSS, Javascript, Leaflet, NumPy',
-    img: require('../assets/augmented-design.png'),
+    img: require('../assets/floorplan-eval.png'),
     code: 'https://github.com/shiyan-chen/floor-plan-evaluation',
     demo: '',
+    color: '#888',
   },
 
   {
@@ -59,6 +65,7 @@ module.exports = [
     img: require('../assets/document-search.png'),
     code: 'https://github.com/shiyan-chen/distributed-document-search-system',
     demo: '',
+    color: '',
   },
   {
     id: 'flappy-astronaut',
@@ -67,6 +74,7 @@ module.exports = [
     img: require('../assets/flappy-astronaut.png'),
     code: 'https://github.com/shiyan-chen/flappy-astronaut',
     demo: '',
+    color: '',
   },
   {
     id: 'bear-maps',
@@ -75,6 +83,7 @@ module.exports = [
     img: require('../assets/bear-maps.png'),
     code: 'https://github.com/shiyan-chen/bear-maps',
     demo: '',
+    color: '',
   },
   {
     id: 'window-tracker',
@@ -83,6 +92,7 @@ module.exports = [
     img: require('../assets/window-tracker.png'),
     code: 'https://github.com/shiyan-chen/window-tracker',
     demo: 'https://shiyan-chen.github.io/window-tracker/',
+    color: '',
   },
 
   {
@@ -92,6 +102,7 @@ module.exports = [
     img: require('../assets/hero-page.png'),
     code: 'https://github.com/shiyan-chen/banner-design-1',
     demo: 'https://shiyan-chen.github.io/banner-design-1/',
+    color: '#3E38E8',
   },
 
   {
@@ -101,5 +112,6 @@ module.exports = [
     img: require('../assets/maze-game.jpg'),
     code: 'https://github.com/shiyan-chen/maze-game',
     demo: '',
+    color: '',
   },
 ]

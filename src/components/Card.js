@@ -5,8 +5,7 @@ const Overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 0;
-  background-color: var(--card-overlay-bg);
-  opacity: 0.95;
+  background-color: ${({ bgColor }) => (bgColor !== '' ? bgColor : '#888')};
   transition: all 0.3s ease-in-out;
   z-index: 2;
 
@@ -105,7 +104,7 @@ const Links = styled.div`
 const Card = (props) => {
   return (
     <Container>
-      <Overlay>
+      <Overlay bgColor={props.color}>
         <div>
           <h3>Technologies</h3>
           <p>{props.technologies}</p>

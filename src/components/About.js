@@ -62,6 +62,10 @@ const ImgWrap = styled.div`
 
 const Content = styled.div`
   width: 100%;
+
+  a {
+    text-decoration: underline;
+  }
 `
 
 const About = () => {

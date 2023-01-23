@@ -55,7 +55,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -69,11 +68,10 @@ canvas {
   left: 50%;
   -ms-transform: translate(-45rem, -50%);
   transform: translate(-45rem, -50%);
-
-  width: 100%;
-  height: 100vh;
   z-index: -1;
 }
+
+/* refactor builtin html elements */
 
 h1 {
   font-size: 3rem;
@@ -99,6 +97,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* responsive settings */
 
 @media screen and (max-width: 1200px) {
   canvas {
