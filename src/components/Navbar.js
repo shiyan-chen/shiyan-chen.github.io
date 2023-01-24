@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { IconContext } from 'react-icons'
 import { FaBars } from 'react-icons/fa'
+import { Button } from './Button'
 
 const Container = styled.div`
   display: flex;
@@ -26,6 +27,12 @@ const Wrapper = styled.div`
   padding: 0 24px;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    ${Button} {
+      display: none;
+    }
+  }
 `
 
 const Logo = styled.a`
@@ -61,55 +68,6 @@ const Item = styled.a`
     &:hover {
       color: var(--navbar-accent);
     }
-  }
-`
-
-const Btn = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 150px;
-  height: 40px;
-  border: 1px solid var(--navbar-content);
-  color: var(--black);
-  border-radius: 50px;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    width: 0px;
-    height: 0px;
-    background-color: var(--navbar-accent);
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-  }
-
-  span {
-    z-index: 3;
-  }
-
-  @media screen and (hover: hover) {
-    &:hover {
-      border: 1px solid var(--navbar-accent);
-      color: var(--white);
-    }
-
-    &:hover::before {
-      width: 160px;
-      height: 160px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    display: none;
   }
 `
 
@@ -188,9 +146,11 @@ const Navbar = ({ toggleSidebar }) => {
           <Item href='#projects'>Projects</Item>
           <Item href='#contact'>Contact</Item>
         </Items>
-        <Btn href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
-          <span>My Resume</span>
-        </Btn>
+        <Button>
+          <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
+            My Resume
+          </a>
+        </Button>
       </Wrapper>
     </Container>
   )

@@ -8,6 +8,7 @@ const Overlay = styled.div`
   background-color: ${({ bgColor }) => (bgColor !== '' ? bgColor : '#888')};
   transition: all 0.3s ease-in-out;
   z-index: 2;
+  opacity: 0.93;
 
   div {
     color: var(--card-overlay-content);
@@ -88,7 +89,7 @@ const Title = styled.h3`
 
 const Links = styled.div`
   margin-top: 5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
 
   a {
     text-decoration: underline;
@@ -115,15 +116,15 @@ const Card = (props) => {
         <Content>
           <Title>{props.title}</Title>
           <Links>
-            {props.code && (
-              <a href={props.code} target='_blank' rel='noopener noreferrer'>
-                code
+            {props.demo && (
+              <a href={props.demo} target='_blank' rel='noopener noreferrer'>
+                Demo
               </a>
             )}{' '}
             {props.code && props.demo && '|'}{' '}
-            {props.demo && (
-              <a href={props.demo} target='_blank' rel='noopener noreferrer'>
-                demo
+            {props.code && (
+              <a href={props.code} target='_blank' rel='noopener noreferrer'>
+                Code
               </a>
             )}
           </Links>

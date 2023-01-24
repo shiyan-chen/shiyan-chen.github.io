@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Connect from '../assets/mail.svg'
+import { Button } from './Button'
 
 const Container = styled.div`
   display: flex;
@@ -53,32 +54,6 @@ const Content = styled.div`
   width: 100%;
 `
 
-const Btn = styled.div`
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 40px;
-  border: 1px solid var(--navbar-content);
-  border-radius: 50px;
-  cursor: pointer;
-
-  @media screen and (hover: hover) {
-    &:hover {
-      background-color: var(--navbar-accent);
-      border: 1px solid var(--navbar-accent);
-      color: var(--navbar-bg);
-    }
-  }
-
-  &:avtive {
-    background-color: var(--navbar-accent);
-    border: 1px solid var(--navbar-accent);
-    color: var(--navbar-bg);
-  }
-`
-
 const Contact = () => {
   return (
     <Container id='contact'>
@@ -91,7 +66,7 @@ const Contact = () => {
             May 2023 to May 2024. If you'd like to offer me an internship or job
             opportunity or any other form of cooperation, please email me.
           </p>
-          <Btn>
+          <Button>
             <a
               href='mailto:c.shiyan22@gmail.com'
               target='_blank'
@@ -99,10 +74,10 @@ const Contact = () => {
             >
               Say Hello
             </a>
-          </Btn>
+          </Button>
         </Content>
         <ImgWrap>
-          <img src={Connect} />
+          <img src={Connect} alt='Mail' />
         </ImgWrap>
       </Wrapper>
     </Container>
