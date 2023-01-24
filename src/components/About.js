@@ -73,7 +73,7 @@ const About = () => {
     <Container id='about'>
       <Wrapper>
         <ImgWrap>
-          <img src={Profile} />
+          <img src={Profile} alt='profile' />
         </ImgWrap>
         <Content>
           <h2># About Me</h2>

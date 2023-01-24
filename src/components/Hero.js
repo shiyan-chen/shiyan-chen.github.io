@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+// import { motion } from 'framer-motion'
 import PokeMe1 from '../assets/poke-me1.png'
 import PokeMe2 from '../assets/poke-me2.png'
 
@@ -91,6 +92,10 @@ const Content = styled.div`
   flex-direction: column;
   cursor: default;
 
+  div {
+    overflow: hidden;
+  }
+
   h1 {
     font-size: 5rem;
     font-family: var(--font-display);
@@ -99,6 +104,7 @@ const Content = styled.div`
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    margin-bottom: 1rem;
 
     span {
       white-space: nowrap;
@@ -120,6 +126,44 @@ const Content = styled.div`
   }
 `
 
+// const banner = {
+//   animate: {
+//     transition: {
+//       delayChildren: 0.4,
+//       staggerChildren: 0.1,
+//     },
+//   },
+// }
+
+// const letterAni = {
+//   initial: { y: 400 },
+//   animate: {
+//     y: 0,
+//     transition: {
+//       ease: [0.6, 0.01, 0.05, 0.95],
+//       duration: 1,
+//     },
+//   },
+// }
+
+// const AnimatedLetters = ({ word, disabled }) => (
+//   <motion.span
+//     variants={disabled ? null : banner}
+//     initial='initial'
+//     animate='animate'
+//   >
+//     {[...word].map((letter, i) => (
+//       <motion.span
+//         style={{ display: 'inline-block' }}
+//         key={i}
+//         variants={disabled ? null : letterAni}
+//       >
+//         {letter}
+//       </motion.span>
+//     ))}
+//   </motion.span>
+// )
+
 const Hero = () => {
   return (
     <Container id='hero'>
@@ -127,6 +171,17 @@ const Hero = () => {
       <Wrapper>
         <Space />
         <Content>
+          {/* <div>
+            <h1>
+              <AnimatedLetters word='Hi,' />{' '}
+              <span className='space'>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </span>
+              <AnimatedLetters word="I'm" /> <AnimatedLetters word='Shiyan' />{' '}
+              <AnimatedLetters word='Chen.' />
+            </h1>
+          </div> */}
+
           <h1>
             Hi,{' '}
             <span className='space'>

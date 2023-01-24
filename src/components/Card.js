@@ -1,11 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+// import { motion } from 'framer-motion'
 
 const Overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 0;
-  background-color: ${({ bgColor }) => (bgColor !== '' ? bgColor : '#888')};
+  background-color: ${({ bgColor }) =>
+    bgColor !== '' ? bgColor : 'var(--card-accent)'};
+  /* background-color: var(--card-accent); */
   transition: all 0.3s ease-in-out;
   z-index: 2;
   opacity: 0.93;
@@ -40,7 +43,8 @@ const Container = styled.div`
   text-align: center;
   border-radius: 10px;
   background-color: var(--card-bg);
-  box-shadow: 4px 4px 0px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.05),
+    -4px -4px 4px 0 rgba(255, 255, 255, 0.5);
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -48,7 +52,7 @@ const Container = styled.div`
   -moz-transform: translate3d(0, 0, 0);
 
   &:hover ${Overlay} {
-    height: 74%;
+    height: 75%;
 
     div {
       opacity: 1;
@@ -58,7 +62,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +108,11 @@ const Links = styled.div`
 
 const Card = (props) => {
   return (
-    <Container>
+    <Container
+    // as={motion.div}
+    // whileHover={{ scale: 1.05 }}
+    // transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+    >
       <Overlay bgColor={props.color}>
         <div>
           <h3>Technologies</h3>

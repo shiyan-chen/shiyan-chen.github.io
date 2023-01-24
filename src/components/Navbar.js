@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 import { IconContext } from 'react-icons'
 import { FaBars } from 'react-icons/fa'
 import { Button } from './Button'
@@ -56,7 +57,7 @@ const Items = styled.div`
   }
 `
 
-const Item = styled.a`
+const Item = styled(Link)`
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -141,10 +142,30 @@ const Navbar = ({ toggleSidebar }) => {
           </IconContext.Provider>
         </MobileIcon>
         <Items>
-          <Item href='#hero'>Home</Item>
-          <Item href='#about'>About</Item>
-          <Item href='#projects'>Projects</Item>
-          <Item href='#contact'>Contact</Item>
+          <Item to='hero' smooth={true} duration={500} spy={true} exact='true'>
+            Home
+          </Item>
+          <Item to='about' smooth={true} duration={500} spy={true} exact='true'>
+            About
+          </Item>
+          <Item
+            to='projects'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+          >
+            Projects
+          </Item>
+          <Item
+            to='contact'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+          >
+            Contact
+          </Item>
         </Items>
         <Button>
           <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
