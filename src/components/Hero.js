@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-// import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import PokeMe1 from '../assets/poke-me1.png'
 import PokeMe2 from '../assets/poke-me2.png'
 
@@ -14,35 +14,22 @@ const Container = styled.div`
   z-index: -999;
 `
 
-const Poke = styled.div`
+const PokeWrap = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-10rem, -15rem);
   transform: translate(-10rem, -15rem);
   z-index: 3;
-
   height: 120px;
   width: 200px;
-  background-image: url(${PokeMe1});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 
   @media screen and (max-width: 1200px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     -ms-transform: translate(-130%, -200%);
     transform: translate(-130%, -200%);
     z-index: 3;
-
     height: 140px;
     width: 150px;
-    background-image: url(${PokeMe2});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   @media screen and (max-width: 1200px) and (min-height: 1000px) {
@@ -54,6 +41,27 @@ const Poke = styled.div`
     height: 130px;
     -ms-transform: translate(-120%, -170%);
     transform: translate(-120%, -170%);
+  }
+`
+
+const Poke = styled(motion.div)`
+  height: 120px;
+  width: 200px;
+  background-image: url(${PokeMe1});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 1200px) {
+    -ms-transform: translate(-130%, -200%);
+    transform: translate(-130%, -200%);
+    height: 140px;
+    width: 150px;
+    background-image: url(${PokeMe2});
+  }
+
+  @media screen and (max-width: 1200px) and (max-height: 700px) {
+    height: 130px;
   }
 `
 
@@ -105,12 +113,17 @@ const Content = styled.div`
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
     margin-bottom: 1rem;
+    padding-block: 1rem;
+    overflow: hidden;
 
     span {
+      display: inline-block;
       white-space: nowrap;
     }
 
     .space {
+      width: 340px;
+
       @media screen and (max-width: 1200px) {
         display: none;
       }
@@ -126,69 +139,57 @@ const Content = styled.div`
   }
 `
 
-// const banner = {
-//   animate: {
-//     transition: {
-//       delayChildren: 0.4,
-//       staggerChildren: 0.1,
-//     },
-//   },
-// }
+const bannerAni = {
+  animate: {
+    transition: {
+      delayChildren: 0.4,
+      staggerChildren: 0.25,
+    },
+  },
+}
 
-// const letterAni = {
-//   initial: { y: 400 },
-//   animate: {
-//     y: 0,
-//     transition: {
-//       ease: [0.6, 0.01, 0.05, 0.95],
-//       duration: 1,
-//     },
-//   },
-// }
+const wordAni = {
+  initial: { y: 400 },
+  animate: {
+    y: 0,
+    transition: {
+      ease: [0.6, 0.01, -0.05, 0.95],
+      duration: 1,
+    },
+  },
+}
 
-// const AnimatedLetters = ({ word, disabled }) => (
-//   <motion.span
-//     variants={disabled ? null : banner}
-//     initial='initial'
-//     animate='animate'
-//   >
-//     {[...word].map((letter, i) => (
-//       <motion.span
-//         style={{ display: 'inline-block' }}
-//         key={i}
-//         variants={disabled ? null : letterAni}
-//       >
-//         {letter}
-//       </motion.span>
-//     ))}
-//   </motion.span>
-// )
+const pokeAni = {
+  initial: { scale: 0 },
+  animate: {
+    scale: 1,
+    transition: {
+      delay: 2.2,
+      ease: [0.6, 0.01, -0.05, 1],
+      duration: 0.9,
+    },
+  },
+}
 
 const Hero = () => {
   return (
     <Container id='hero'>
-      <Poke />
+      <PokeWrap>
+        <Poke variants={pokeAni} initial='initial' animate='animate' />
+      </PokeWrap>
+
       <Wrapper>
         <Space />
         <Content>
-          {/* <div>
-            <h1>
-              <AnimatedLetters word='Hi,' />{' '}
-              <span className='space'>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </span>
-              <AnimatedLetters word="I'm" /> <AnimatedLetters word='Shiyan' />{' '}
-              <AnimatedLetters word='Chen.' />
-            </h1>
-          </div> */}
-
-          <h1>
-            Hi,{' '}
-            <span className='space'>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <motion.h1 variants={bannerAni} initial='initial' animate='animate'>
+            <motion.span variants={wordAni}>Hi,</motion.span>{' '}
+            <motion.span variants={wordAni} className='space' />
+            <motion.span variants={wordAni}>I'm </motion.span>{' '}
+            <span>
+              <motion.span variants={wordAni}>Shiyan</motion.span>{' '}
+              <motion.span variants={wordAni}>Chen.</motion.span>
             </span>
-            I'm <span>Shiyan Chen.</span>
-          </h1>
+          </motion.h1>
         </Content>
       </Wrapper>
     </Container>
