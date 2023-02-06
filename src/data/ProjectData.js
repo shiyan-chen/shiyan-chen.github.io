@@ -15,7 +15,7 @@ module.exports = [
     img: require('../assets/unworried-store.png'),
     code: 'https://github.com/shiyan-chen/unworried-store',
     demo: 'https://youtu.be/Y6ALKA49LFk',
-    color: '#7BB000',
+    color: '#9BD000',
   },
   {
     id: 'react-dolla',
@@ -25,6 +25,47 @@ module.exports = [
     code: 'https://github.com/shiyan-chen/react-dolla',
     demo: 'https://shiyan-chen.github.io/react-dolla/',
     color: '#0DC16B',
+  },
+
+  {
+    id: 'floorplan-eval',
+    title: 'Floor Plan Evaluation Website',
+    technologies:
+      'Python, Flask, React.js, HTML, CSS, Javascript, Leaflet, NumPy',
+    img: require('../assets/floorplan-eval.png'),
+    code: 'https://github.com/shiyan-chen/floor-plan-evaluation',
+    demo: '',
+    color: '#999',
+  },
+
+  {
+    id: 'distributed-doc',
+    title: 'Distributed Document Search',
+    technologies: 'Java, Apache Zookeeper, HTML, CSS, Javascript',
+    img: require('../assets/document-search.png'),
+    code: 'https://github.com/shiyan-chen/distributed-document-search-system',
+    demo: '',
+    color: '',
+  },
+
+  {
+    id: 'ios-timer-app',
+    title: 'IOS Timer App',
+    technologies: 'Swift, SwiftUI',
+    img: require('../assets/timer.png'),
+    code: 'https://github.com/shiyan-chen/ios-timer-app',
+    demo: '',
+    color: '',
+  },
+
+  {
+    id: 'cool-hero',
+    title: 'Cool Hero Page',
+    technologies: 'React.js, ps5j, Javascript, HTML, CSS',
+    img: require('../assets/hero-page.png'),
+    code: 'https://github.com/shiyan-chen/banner-design-1',
+    demo: 'https://shiyan-chen.github.io/banner-design-1/',
+    color: '#3E38E8',
   },
 
   {
@@ -47,26 +88,7 @@ module.exports = [
     demo: '',
     color: '',
   },
-  {
-    id: 'floorplan-eval',
-    title: 'Floor Plan Evaluation Website',
-    technologies:
-      'Python, Flask, React.js, HTML, CSS, Javascript, Leaflet, NumPy',
-    img: require('../assets/floorplan-eval.png'),
-    code: 'https://github.com/shiyan-chen/floor-plan-evaluation',
-    demo: '',
-    color: '#888',
-  },
 
-  {
-    id: 'distributed-doc',
-    title: 'Distributed Document Search',
-    technologies: 'Java, Apache Zookeeper, HTML, CSS, Javascript',
-    img: require('../assets/document-search.png'),
-    code: 'https://github.com/shiyan-chen/distributed-document-search-system',
-    demo: '',
-    color: '',
-  },
   {
     id: 'flappy-astronaut',
     title: 'Flappy Astronaut',
@@ -93,16 +115,6 @@ module.exports = [
     code: 'https://github.com/shiyan-chen/window-tracker',
     demo: 'https://shiyan-chen.github.io/window-tracker/',
     color: '',
-  },
-
-  {
-    id: 'cool-hero',
-    title: 'Cool Hero Page',
-    technologies: 'React.js, ps5j, Javascript, HTML, CSS',
-    img: require('../assets/hero-page.png'),
-    code: 'https://github.com/shiyan-chen/banner-design-1',
-    demo: 'https://shiyan-chen.github.io/banner-design-1/',
-    color: '#3E38E8',
   },
 
   {

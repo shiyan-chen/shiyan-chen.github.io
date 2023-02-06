@@ -6,9 +6,9 @@ const Overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 0;
-  background-color: ${({ bgColor }) =>
-    bgColor !== '' ? bgColor : 'var(--card-accent)'};
-  /* background-color: var(--card-accent); */
+  /* background-color: ${({ bgColor }) =>
+    bgColor !== '' ? bgColor : 'var(--card-accent)'}; */
+  background-color: var(--card-accent);
   transition: all 0.3s ease-in-out;
   z-index: 2;
   opacity: 0.93;
@@ -41,10 +41,11 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: var(--card-bg);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.05),
-    -4px -4px 4px 0 rgba(255, 255, 255, 0.5);
+  /* box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1),
+    -4px -4px 4px 0 rgba(255, 255, 255, 0.9); */
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

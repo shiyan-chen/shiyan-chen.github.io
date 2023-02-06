@@ -9,6 +9,9 @@ const Container = styled.div`
   min-height: 100vh;
   background-color: var(--about-bg);
   color: var(--about-content);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 
   span {
     font-weight: 700;
@@ -81,29 +84,27 @@ const About = () => {
           <p>
             Hello, I am a <span>full-stack software developer</span> currently
             pursuing a second <span>master’s degree in Computer Science</span>{' '}
-            at <span>Northeastern University</span>. I previously studied
-            architecture for six years and earned my{' '}
+            at <span>Northeastern University</span>. I earned my{' '}
             <span>bachelor's degree in Architecture</span> from{' '}
-            <span>Huazhong University of Sci & Tech</span> (China) and my first{' '}
+            <span>Huazhong University of Sci & Tech (China)</span> and my first{' '}
             <span>master's degree in Advanced Architectural Design</span> from{' '}
-            <span>UC Berkeley</span>. As an architectural designer, I realized
-            how powerful programming is for architectural design and how
-            interesting programming is to me, which led me to pursue a degree in
-            Computer Science. As a full-stack developer, architecture teaches me
-            to think systematically and to design in detail.
+            <span>UC Berkeley</span>. As an architectural designer, programming
+            helps me to expand the boundaries of my design, which led me to
+            pursue a degree in Computer Science. As a full-stack developer,
+            architectural background teaches me to think systematically and to
+            design in detail.
           </p>
           <p>
             I have lots of practical experience in{' '}
-            <span>software development</span>. For example, I developed a{' '}
-            <span>low-latency twitter backend service</span> using Python and
-            Django, as well as a <span>full-stack e-commerce website</span>{' '}
-            using Java and Spring Boot. I also worked with a team of three to
-            develop an <span>Android mobile app, Unworried Store</span>, for
-            recording and sharing users’ daily worries. I love what I’m doing,
-            but now I’m ready for a more challenging assignment. I am looking
-            for the opportunity to work with professional development teams to
-            accomplish innovative and challenging projects. If you would like to
-            offer me this opportunity, please check my{' '}
+            <span>web and mobile development</span>. I once developed a{' '}
+            <span>low-latency twitter backend service</span> and a{' '}
+            <span>full-stack e-commerce website</span>. I also worked with a
+            team of three to develop a <span>mobile app, Unworried Store</span>,
+            for recording and sharing users’ daily worries. I love what I’m
+            doing, but now I’m ready for a more challenging assignment. I am
+            looking for the opportunity to work with professional development
+            teams to accomplish innovative and challenging projects. If you
+            would like to offer me this opportunity, please check my{' '}
             <span>
               <a
                 href='https://www.linkedin.com/in/shiyan-chen22/'
@@ -113,14 +114,14 @@ const About = () => {
                 LinkedIn
               </a>
             </span>{' '}
-            page and feel free to{' '}
+            and feel free to{' '}
             <span>
               <a
                 href='mailto:c.shiyan22@gmail.com'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                email
+                contact
               </a>
             </span>{' '}
             me.
